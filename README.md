@@ -53,7 +53,13 @@ Then, allow the following permissions in your AndroidManifest.xml:
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 	
+In the &lt;application&gt; tag, you'll need to add these &lt;meta-data&gt; tags: ([you'll need a Google Maps v2 key](https://developers.google.com/maps/documentation/android/start#obtain_a_google_maps_api_key))
+	
+	<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="YOUR_MAPS_V2_KEY" />
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    	
 Also, add the following activities in your AndroidManifest.xml:
 
 	<activity android:name="com.taylorcorp.lifepics.activities.OrderActivity"/>
@@ -63,6 +69,10 @@ Also, add the following activities in your AndroidManifest.xml:
 	<activity android:name="com.taylorcorp.lifepics.activities.ContactInfoActivity"/>
 	<activity android:name="com.taylorcorp.lifepics.activities.OrderCompletedActivity"/>
 
+Then, to support mapping, you need to [provide a key](https://developers.google.com/maps/documentation/android/start#obtain_a_google_maps_api_key) for the V2 Maps:
+
+	<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="YOUR_KEY_HERE" />
+    
 Now, in your program logic, you'll want to connect to the LifePics network by providing your Partner ID, Source ID, and password. You can do this in the activity (or fragment) where you plan on presenting the LifePics print selector:
 
 	service.startSession(this, "partnerID", "password", new LifePicsWebServiceResponse() {
