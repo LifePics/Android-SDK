@@ -41,7 +41,7 @@ First, copy ksoap2-android-assembly-2.3-jar-with-dependencies into your libs/ fo
 
 Next, copy the resources from res.zip into your project. (They're all prefixed with lp- to keep them visually differentiated from your own resources.)
 
-You'll need to change one value in these resource, specifically the lp_partner_source_id value in lp_settings.xml:
+You'll need to change at least one value in these resources, specifically the lp_partner_source_id value in lp_settings.xml:
 
 	<!-- lifepics -->
 	<string name="lp_partner_source_id">11</string>
