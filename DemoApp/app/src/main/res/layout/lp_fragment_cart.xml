@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/lp_white_color"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/lp_green_bar_header"
+                android:text="@string/lp_cart_photo_prints_up" />
+
+            <LinearLayout
+                android:id="@+id/lp_layout_cart_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/lp_component_vertical_margin"
+                android:orientation="vertical"/>
+
+            <TextView
+                android:id="@+id/lp_txt_cart_empty"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:background="@android:color/white"
+                android:layout_marginBottom="@dimen/lp_component_vertical_margin"
+                android:gravity="center"
+                android:text="@string/lp_cart_empty"
+                />
+
+            <Button
+                android:id="@+id/lp_btn_continue_shopping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lp_activity_horizontal_margin"
+                android:layout_marginRight="@dimen/lp_activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/lp_component_vertical_margin"
+                android:text="@string/lp_cart_continue_shopping"
+                />
+
+            <Button
+                android:id="@+id/lp_btn_pick_up"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lp_activity_horizontal_margin"
+                android:layout_marginRight="@dimen/lp_activity_horizontal_margin"
+                android:text="@string/lp_cart_pick_up"
+                />
+
+            <Button
+                android:id="@+id/lp_btn_find_photofinishers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/lp_activity_horizontal_margin"
+                android:layout_marginRight="@dimen/lp_activity_horizontal_margin"
+                android:text="@string/lp_cart_find_photofinishers"
+                />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

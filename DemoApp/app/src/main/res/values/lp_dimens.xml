@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="lp_activity_horizontal_margin">16dp</dimen>
+    <dimen name="lp_activity_vertical_margin">16dp</dimen>
+    <dimen name="lp_component_vertical_margin">16dp</dimen>
+    <dimen name="lp_button_height">48dp</dimen>
+</resources>

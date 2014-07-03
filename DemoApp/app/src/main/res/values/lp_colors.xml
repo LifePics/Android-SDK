@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- tints -->
+    <color name="lp_primary_tint_color">#3bb021</color>
+    <color name="lp_secondary_tint_color">#fcb024</color>
+    <color name="lp_disabled_tint_color">#808080</color>
+
+    <!-- common -->
+    <color name="lp_white_color">#ffffff</color>
+    <color name="lp_light_button_title_color">#ffffff</color>
+    <color name="lp_light_separator_bar">#dedede</color>
+
+    <!-- order cart -->
+    <color name="lp_cart_line_item_background">#f7f7fa</color>
+</resources>

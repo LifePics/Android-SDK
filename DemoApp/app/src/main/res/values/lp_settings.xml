@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lp_lifepics_version">1.0.0</string>
+
+    <!-- endpoint -->
+    <string name="lp_endpoint">http://api.lifepics.com/V3/lpwebservice.asmx/</string>
+    <string name="lp_soap_action">https://api.lifepics.com/v3</string>
+
+    <!-- lifepics -->
+    <string name="lp_partner_source_id">11</string>
+
+    <!-- ordering -->
+    <bool name="lp_offer_choice_for_test_orders">false</bool>
+
+    <bool name="lp_is_app_private_label">false</bool>
+    <bool name="lp_is_app_merchant_group">false</bool>
+    <bool name="lp_is_metric">false</bool>
+</resources>

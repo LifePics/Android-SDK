@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="@color/lp_cart_line_item_background">
+
+    <TextView
+        android:id="@+id/lp_txt_size_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:textSize="22sp"
+        android:text="4 x 4 Print"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/lp_btn_less"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_margin="0dp"
+            android:background="@color/lp_primary_tint_color"
+            android:text="@string/lp_minus"/>
+
+        <TextView
+            android:id="@+id/lp_txt_quantity"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/lp_secondary_tint_color" />
+
+        <Button
+            android:id="@+id/lp_btn_more"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="@color/lp_primary_tint_color"
+            android:text="@string/lp_plus"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lp_light_separator_bar"/>
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/lp_single_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lp_component_vertical_margin"
+            android:text="@string/lp_order_is_in"
+            style="@style/lp_order_done_title"/>
+
+        <TextView
+            android:id="@+id/lp_txt_pickup_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lp_component_vertical_margin"
+            style="@style/lp_order_done_message"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/lp_btn_directions"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Directions"/>
+
+            <Button
+                android:id="@+id/lp_btn_call_store"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=""/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/lp_btn_continue_shopping"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lp_button_height"
+            android:layout_marginLeft="@dimen/lp_activity_horizontal_margin"
+            android:layout_marginRight="@dimen/lp_activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/lp_component_vertical_margin"
+            android:text="@string/lp_cart_continue_shopping"
+            style="@style/lp_intro_order_button"
+            />
+
+        <Button
+            android:id="@+id/lp_btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lp_button_height"
+            android:layout_marginLeft="@dimen/lp_activity_horizontal_margin"
+            android:layout_marginRight="@dimen/lp_activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/lp_component_vertical_margin"
+            android:text="@string/lp_done"
+            style="@style/lp_intro_order_button"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

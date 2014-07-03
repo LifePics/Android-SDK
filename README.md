@@ -39,6 +39,8 @@ These instructions are for setting up the LifePics SDK in an app using Android S
 
 First, copy ksoap2-android-assembly-2.3-jar-with-dependencies into your libs/ folder. It's a required dependency.
 
+You'll also need to make sure to link in Google Play Services for the Maps usage later.
+
 Next, copy the resources from res.zip into your project. (They're all prefixed with lp- to keep them visually differentiated from your own resources.)
 
 You'll need to change at least one value in these resources, specifically the lp_partner_source_id value in lp_settings.xml:
@@ -62,12 +64,12 @@ In the &lt;application&gt; tag, you'll need to add these &lt;meta-data&gt; tags:
     	
 Also, add the following activities in your AndroidManifest.xml:
 
-	<activity android:name="com.taylorcorp.lifepics.activities.OrderActivity"/>
-	<activity android:name="com.taylorcorp.lifepics.activities.CartActivity"/>
-	<activity android:name="com.taylorcorp.lifepics.activities.PickupLocationsActivity"/>
-	<activity android:name="com.taylorcorp.lifepics.activities.ChangeLocationActivity"/>
-	<activity android:name="com.taylorcorp.lifepics.activities.ContactInfoActivity"/>
-	<activity android:name="com.taylorcorp.lifepics.activities.OrderCompletedActivity"/>
+	<activity android:name="com.taylorcorp.lifepics.activities.OrderActivity" android:screenOrientation="portrait" />
+	<activity android:name="com.taylorcorp.lifepics.activities.CartActivity" android:screenOrientation="portrait" />
+	<activity android:name="com.taylorcorp.lifepics.activities.PickupLocationsActivity" android:screenOrientation="portrait" />
+	<activity android:name="com.taylorcorp.lifepics.activities.ChangeLocationActivity" android:screenOrientation="portrait" />
+	<activity android:name="com.taylorcorp.lifepics.activities.ContactInfoActivity" android:screenOrientation="portrait" />
+	<activity android:name="com.taylorcorp.lifepics.activities.OrderCompletedActivity" android:screenOrientation="portrait" />
 
 Then, to support mapping, you need to [provide a key](https://developers.google.com/maps/documentation/android/start#obtain_a_google_maps_api_key) for the V2 Maps:
 
