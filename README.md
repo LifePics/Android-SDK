@@ -64,12 +64,12 @@ In the &lt;application&gt; tag, you'll need to add these &lt;meta-data&gt; tags:
     	
 Also, add the following activities in your AndroidManifest.xml:
 
-	<activity android:name="com.taylorcorp.lifepics.activities.OrderActivity" android:screenOrientation="portrait" />
-	<activity android:name="com.taylorcorp.lifepics.activities.CartActivity" android:screenOrientation="portrait" />
-	<activity android:name="com.taylorcorp.lifepics.activities.PickupLocationsActivity" android:screenOrientation="portrait" />
-	<activity android:name="com.taylorcorp.lifepics.activities.ChangeLocationActivity" android:screenOrientation="portrait" />
-	<activity android:name="com.taylorcorp.lifepics.activities.ContactInfoActivity" android:screenOrientation="portrait" />
-	<activity android:name="com.taylorcorp.lifepics.activities.OrderCompletedActivity" android:screenOrientation="portrait" />
+    <activity android:name="com.taylorcorp.lifepics.order.OrderActivity" android:screenOrientation="portrait"/>
+    <activity android:name="com.taylorcorp.lifepics.cart.CartActivity" android:screenOrientation="portrait"/>
+    <activity android:name="com.taylorcorp.lifepics.locations.PickupLocationsActivity" android:screenOrientation="portrait"/>
+    <activity android:name="com.taylorcorp.lifepics.locations.ChangeLocationActivity" android:screenOrientation="portrait"/>
+    <activity android:name="com.taylorcorp.lifepics.contactinfo.ContactInfoActivity" android:screenOrientation="portrait"/>
+    <activity android:name="com.taylorcorp.lifepics.order.OrderCompletedActivity" android:screenOrientation="portrait"/>
 
 Then, to support mapping, you need to [provide a key](https://developers.google.com/maps/documentation/android/start#obtain_a_google_maps_api_key) for the V2 Maps:
 
