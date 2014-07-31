@@ -7,9 +7,17 @@
 
     <!-- common -->
     <color name="lp_white_color">#ffffff</color>
+    <color name="lp_black_color">#000000</color>
     <color name="lp_light_button_title_color">#ffffff</color>
     <color name="lp_light_separator_bar">#dedede</color>
+    <color name="lp_transparent">#00000000</color>
 
     <!-- order cart -->
     <color name="lp_cart_line_item_background">#f7f7fa</color>
+
+    <color name="lp_divider_color">#ffffff</color>
+
+    <color name="lp_semi_transparent">#afffffff</color>
+
+    <color name="lp_grey">#c8c8c8</color>
 </resources>

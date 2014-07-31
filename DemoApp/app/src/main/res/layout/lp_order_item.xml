@@ -24,29 +24,40 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:layout_centerVertical="true"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:background="@drawable/lp_rounded_border">
 
         <Button
             android:id="@+id/lp_btn_less"
             android:layout_width="48dp"
             android:layout_height="match_parent"
-            android:layout_margin="0dp"
-            android:background="@color/lp_primary_tint_color"
-            android:text="@string/lp_minus"/>
+            android:layout_margin="2dp"
+            android:background="@drawable/lp_quant_minus_selector"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/lp_primary_tint_color"/>
 
         <TextView
             android:id="@+id/lp_txt_quantity"
             android:layout_width="56dp"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:background="@color/lp_secondary_tint_color" />
+            android:textSize="28dp"
+            android:text="0"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/lp_primary_tint_color" />
 
         <Button
             android:id="@+id/lp_btn_more"
             android:layout_width="48dp"
             android:layout_height="match_parent"
-            android:background="@color/lp_primary_tint_color"
-            android:text="@string/lp_plus"/>
+            android:layout_margin="2dp"
+            android:background="@drawable/lp_quant_plus_selector"/>
     </LinearLayout>
 
     <View

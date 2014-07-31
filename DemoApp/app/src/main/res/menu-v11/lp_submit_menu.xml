@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/lp_action_cart"
+        android:orderInCategory="100"
+        android:icon="@drawable/lp_ic_cart"
+        android:title="Cart"
+        android:showDividers="middle"
+        yourapp:showAsAction="always"/>
+    <item
+        android:id="@+id/lp_action_cancel"
+        android:orderInCategory="101"
+        android:icon="@drawable/lp_ic_x"
+        android:title="Cancel"
+        android:showDividers="middle"
+        yourapp:showAsAction="always" />
+</menu>

@@ -1,22 +1,52 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:background="@color/lp_white_color"
-    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lp_transparent">
 
-    <EditText
-        android:id="@+id/lp_edit_location"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/lp_postal_code"
-        android:imeOptions="actionSearch"
-        android:inputType="number"/>
+    <RelativeLayout
+        android:id="@+id/edit_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:background="@color/lp_white_color">
+
+        <EditText
+            android:id="@+id/lp_edit_location"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="@dimen/lp_activity_horizontal_margin"
+            android:layout_marginTop="16dp"
+            android:background="@color/lp_transparent"
+            android:hint="@string/lp_postal_code"
+            android:imeOptions="actionSearch"
+            android:inputType="number"
+            android:textSize="21sp" />
+
+        <ImageView
+            android:id="@+id/lp_search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="64dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="@dimen/lp_activity_horizontal_margin"
+            android:layout_marginTop="16dp"
+            android:background="@color/lp_transparent"
+            android:src="@android:drawable/ic_menu_search" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lp_light_separator_bar"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
 
     <ListView
-        android:id="@android:id/list"
+        android:id="@+id/lp_change_location_list"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_holder"
+        />
 
-</LinearLayout>
+</RelativeLayout>

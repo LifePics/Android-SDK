@@ -6,7 +6,7 @@
     android:layout_height="64dp"
     android:background="@color/lp_cart_line_item_background">
 
-    <com.loopj.android.image.SmartImageView
+    <ImageView
         android:id="@+id/lp_img_store_logo"
         android:layout_width="64dp"
         android:layout_height="64dp"
@@ -14,28 +14,39 @@
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"/>
 
+    <Button
+        android:id="@+id/lp_btn_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/lp_activity_horizontal_margin"
+        android:layout_marginLeft="4dp"
+        style="@style/lp_cart_edit"
+        android:text="@string/lp_change" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_toLeftOf="@id/lp_btn_edit"
         android:layout_toRightOf="@id/lp_img_store_logo"
         android:layout_centerVertical="true"
-        android:layout_marginRight="16dp"
         android:orientation="vertical"
-        android:layout_alignParentRight="true">
+        android:layout_toLeftOf="@+id/lp_btn_change">
 
         <TextView
             android:id="@+id/lp_txt_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/lp_primary_tint_color"
-            android:textSize="24sp"
-            android:text="Square"/>
+            android:textSize="22sp"
+            android:singleLine="false"
+            android:text="Store Name"/>
 
         <TextView
             android:id="@+id/lp_txt_store_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="17sp"/>
+            android:textSize="14sp"
+            android:text="address"/>
     </LinearLayout>
 </RelativeLayout>

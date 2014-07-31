@@ -41,9 +41,9 @@ First, copy ksoap2-android-assembly-2.3-jar-with-dependencies into your libs/ fo
 
 You'll also need to make sure to link in Google Play Services for the Maps usage later.
 
-Next, copy the resources from res.zip into your project. (They're all prefixed with lp- to keep them visually differentiated from your own resources.)
+Next, copy the resources from res.zip into your project. You're free to change any of the values in these with discretion, but you should stay more focused on lp_user_settings.xml. (They're all prefixed with lp- to keep them visually differentiated from your own resources.)
 
-You'll need to change at least one value in these resources, specifically the lp_partner_source_id value in lp_settings.xml:
+You'll *need* to change at least one value in these resources, specifically the lp_partner_source_id value in lp_customer_settings.xml:
 
 	<!-- lifepics -->
 	<string name="lp_partner_source_id">11</string>
@@ -55,7 +55,6 @@ Then, allow the following permissions in your AndroidManifest.xml:
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
 	
 In the &lt;application&gt; tag, you'll need to add these &lt;meta-data&gt; tags: ([you'll need a Google Maps v2 key](https://developers.google.com/maps/documentation/android/start#obtain_a_google_maps_api_key))
 	
@@ -77,7 +76,7 @@ Then, to support mapping, you need to [provide a key](https://developers.google.
     
 Now, in your program logic, you'll want to connect to the LifePics network by providing your Partner ID, Source ID, and password. You can do this in the activity (or fragment) where you plan on presenting the LifePics print selector:
 
-	service.startSession(this, "partnerID", "password", new LifePicsWebServiceResponse() {
+	service.startSession(this, "<YOUR PARTNER ID>", "<YOUR PASSWORD>", new LifePicsWebServiceResponse() {
 		@Override
 		public void resultHandler(boolean isSuccess, Object response, ErrorBE error, String message) {
 			// respond however you like
@@ -86,7 +85,7 @@ Now, in your program logic, you'll want to connect to the LifePics network by pr
 
 Finally, when you want to present the print selector:
 
-	Intent i = new Intent(context, OrderActivity.class);
+	Intent i = new Intent(getActivity(), ProductsActivity.class);
 	startActivity(i);
 
 

@@ -1,3 +1,65 @@
+# Configuring Image Sources
+
+The LifePics framework presents a set of image sources that can retrieve users' favorite images to select for printing. However, they'll only appear when they're properly configured. The official list of supported image sources are:
+
+* Local Device Images (always presented)
+* Instagram
+* Facebook
+* Flickr
+* Seeded Images (developer-defined)
+
+To properly configure an image source, you generally need to provide a Public Key or options that are going to be unique to each one. Configuration for each source is explained below.
+
+It's advised that you place all your string resources for these image sources in a separate XML file such as keys.xml.  This will keep them separate from future LifePics SDK updates.
+
+
+### Instagram
+
+1. Create a new client on [Instagram](http://instagram.com/developer/clients/manage/).
+2. Add a string resource for the key *lp_instagram_key* and set it to your provided *Instagram Client ID*.
+
+
+### Facebook
+
+The Facebook SDK must be integrated into your project.  If it's not already included, follow the following steps:
+
+1. [Download](https://developers.facebook.com/docs/android) the Facebook SDK.
+2. Unzip the SDK to a permanent place in your project's parent folder or a shared your team will all be able to access.
+3. 
+
+
+1. Create a new app from your Facebook account.
+2. Follow the first three steps for [configuring the app for iOS](https://developers.facebook.com/docs/ios/getting-started/).
+3. Add a string resource for the key *lp_facebook_app_id* and set it to your provided *Facebook App ID*.
+
+Add the following meta data to your Android Manifest inside your <application> tag:
+	
+    <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/lp_facebook_app_id"/>
+
+Add the following activity entry to your Android Manifest as well:
+
+    <activity android:name="com.facebook.LoginActivity"/>
+
+
+### Flickr
+
+1. Create a new project on [Flickr](https://www.flickr.com/services/apps/create/).
+2. Add a string resource for the key *lp_flickr_key* and set it to your provided *Flickr Key*.
+3. Add a string resource for the key *lp_flickr_secret* and set it to your provided *Flickr Secret*.
+
+Add the following activity entry to your Android Manifest as well. Be sure to replace [*Flickr Key*] with your Flickr Key:
+
+    <activity android:name="com.taylorcorp.lifepics.activities.FlickrViewerActivity"
+        android:screenOrientation="sensorPortrait">
+        <intent-filter>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="flickr[*Flickr Key*]" />
+        </intent-filter>
+
+    </activity>
+
 
 # Configuring Image Sources
 

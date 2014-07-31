@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 
-import com.taylorcorp.lifepics.activities.OrderActivity;
 import com.taylorcorp.lifepics.model.purchases.ShoppingCart;
+import com.taylorcorp.lifepics.order.OrderActivity;
 import com.taylorcorp.lifepics.utils.AlertUtils;
 import com.taylorcorp.lifepics.webservices.LifePicsWebService;
 import com.taylorcorp.lifepics.webservices.LifePicsWebServiceResponse;

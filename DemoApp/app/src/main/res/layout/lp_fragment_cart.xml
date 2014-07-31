@@ -1,8 +1,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/lp_white_color"
-    >
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lp_primary_tint_color"
+        android:layout_alignParentTop="true"/>
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -13,54 +18,89 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <TextView
+            <!--<TextView
                 style="@style/lp_green_bar_header"
-                android:text="@string/lp_cart_photo_prints_up" />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:text="@string/lp_cart_photo_prints_up"
+                android:background="@color/lp_white_color"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lp_primary_tint_color" />-->
 
             <LinearLayout
                 android:id="@+id/lp_layout_cart_items"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/lp_component_vertical_margin"
-                android:orientation="vertical"/>
+                android:orientation="vertical" />
 
             <TextView
                 android:id="@+id/lp_txt_cart_empty"
                 android:layout_width="match_parent"
                 android:layout_height="64dp"
-                android:background="@android:color/white"
                 android:layout_marginBottom="@dimen/lp_component_vertical_margin"
+                android:background="@android:color/white"
                 android:gravity="center"
-                android:text="@string/lp_cart_empty"
-                />
+                android:text="@string/lp_cart_empty" />
 
             <Button
                 android:id="@+id/lp_btn_continue_shopping"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/lp_activity_horizontal_margin"
-                android:layout_marginRight="@dimen/lp_activity_horizontal_margin"
-                android:layout_marginBottom="@dimen/lp_component_vertical_margin"
+                android:layout_height="@dimen/lp_cart_button_height"
+                android:layout_marginBottom="@dimen/lp_cart_button_spacing"
+                android:layout_marginLeft="@dimen/lp_cart_button_horizontal_margin"
+                android:layout_marginRight="@dimen/lp_cart_button_horizontal_margin"
+                android:layout_marginTop="@dimen/lp_cart_button_spacing"
+                android:background="@color/lp_primary_tint_color"
                 android:text="@string/lp_cart_continue_shopping"
-                />
+                android:textSize="@dimen/lp_cart_button_text_size"
+                android:textColor="@color/lp_white_color"/>
 
-            <Button
-                android:id="@+id/lp_btn_pick_up"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:id="@+id/lp_pick_up_prints_holder"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/lp_activity_horizontal_margin"
-                android:layout_marginRight="@dimen/lp_activity_horizontal_margin"
-                android:text="@string/lp_cart_pick_up"
-                />
+                android:orientation="vertical">
 
-            <Button
-                android:id="@+id/lp_btn_find_photofinishers"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/lp_activity_horizontal_margin"
-                android:layout_marginRight="@dimen/lp_activity_horizontal_margin"
-                android:text="@string/lp_cart_find_photofinishers"
-                />
+                <Button
+                    android:id="@+id/lp_btn_pick_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/lp_cart_button_height"
+                    android:layout_marginLeft="@dimen/lp_cart_button_horizontal_margin"
+                    android:layout_marginRight="@dimen/lp_cart_button_horizontal_margin"
+                    android:background="@color/lp_primary_tint_color"
+                    android:text="@string/lp_cart_pick_up"
+                    android:textSize="@dimen/lp_cart_button_text_size"
+                    android:textColor="@color/lp_white_color"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/lp_cart_textview_height"
+                    android:layout_marginBottom="@dimen/lp_cart_button_spacing"
+                    android:layout_marginLeft="@dimen/lp_cart_button_horizontal_margin"
+                    android:layout_marginRight="@dimen/lp_cart_button_horizontal_margin"
+                    android:background="@color/lp_semi_transparent">
+
+                    <TextView
+                        android:id="@+id/locations_nearby"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/lp_cart_text_left_spacing"
+                        android:text="@string/lp_locations_close_number" />
+
+                    <ProgressBar
+                        android:id="@+id/progress_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </LinearLayout>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>
