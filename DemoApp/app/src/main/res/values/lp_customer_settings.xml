@@ -4,7 +4,7 @@
     <string name="lp_partner_source_id">11</string>
 
     <!-- allow testing for fake order (no final submission executed) for test modes -->
-    <bool name="lp_offer_choice_for_test_orders">true</bool>
+    <bool name="lp_offer_choice_for_test_orders">false</bool>
 
     <!-- set this to true and provide your merchant id if necessary -->
     <bool name="lp_is_app_private_label">false</bool>

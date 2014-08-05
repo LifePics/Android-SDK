@@ -4,7 +4,7 @@
     </style>
 
     <style name="lp_order_theme" parent="@style/Theme.AppCompat.Light">
-        <item name="@android:divider">@color/lp_divider_color</item>
+        <item name="@android:divider">@color/lp_grey</item>
     </style>
 
     <style name="lp_action_bar_theme">
@@ -50,6 +50,12 @@
     </style>
 
     <style name="lp_intro_order_button">
+        <item name="android:background">@drawable/lp_order_prints_button</item>
+        <item name="android:textColor">@color/lp_light_button_title_color</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="lp_submitted_continue_button">
         <item name="android:background">@drawable/lp_order_prints_button</item>
         <item name="android:textColor">@color/lp_light_button_title_color</item>
         <item name="android:textSize">20sp</item>
@@ -122,7 +128,7 @@
     <!-- order done -->
     <style name="lp_order_done_title" parent="lp_normal_text">
         <item name="android:textColor">@color/lp_primary_tint_color</item>
-        <item name="android:textSize">34sp</item>
+        <item name="android:textSize">36sp</item>
     </style>
 
     <style name="lp_order_done_message" parent="lp_normal_text">

@@ -6,11 +6,15 @@
 
     <ImageView
         android:id="@+id/lp_img_store_logo"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_margin="16dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp"
         android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"/>
+        android:background="@color/lp_transparent"
+        android:scaleType="fitXY"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -25,19 +29,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/lp_primary_tint_color"
-            android:textSize="22sp"/>
+            android:textSize="20sp"
+            android:text="name"/>
 
         <TextView
             android:id="@+id/lp_txt_store_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14sp"/>
+            android:textSize="14sp"
+            android:textColor="@color/lp_quarter_white"
+            android:text="address"/>
 
         <TextView
             android:id="@+id/lp_txt_store_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14sp"/>
+            android:textSize="14sp"
+            android:text="price"
+            android:textStyle="bold"/>
     </LinearLayout>
 
 </RelativeLayout>

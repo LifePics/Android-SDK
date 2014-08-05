@@ -31,68 +31,67 @@ You will need a free LifePics developer key. Details are in the Overview section
 
 The SDK supports Android 2.3.3 and later.
 
+These instructions are for setting up the LifePics SDK in an app using Android Studio.  If you're still using the older ADT environment, 
+please adjust accordingly.
+
 
 Installation 
 ------------
 
-These instructions are for setting up the LifePics SDK in an app using Android Studio:
+1. Copy the following from Android Files/ into your libs/ folder:
 
-First, copy ksoap2-android-assembly-2.3-jar-with-dependencies into your libs/ folder. It's a required dependency.
+        ksoap2-android-assembly-2.3-jar-with-dependencies.jar
+        picasso-2.3.2.jar
+        LifePicsSDK.jar
 
-You'll also need to make sure to link in Google Play Services for the Maps usage later.
+2. Unzip and copy the resources from res.zip into your project. You're free to change any of the values in these with discretion, but you should stay more focused on lp\_user\_settings.xml. You'll *need* to change at least one value in these resources, specifically the _lp\_partner\_source\_id_ value in lp\_customer\_settings.xml:
 
-Next, copy the resources from res.zip into your project. You're free to change any of the values in these with discretion, but you should stay more focused on lp_user_settings.xml. (They're all prefixed with lp- to keep them visually differentiated from your own resources.)
+        <!-- lifepics -->
+        <string name="lp_partner_source_id">11</string>
 
-You'll *need* to change at least one value in these resources, specifically the lp_partner_source_id value in lp_customer_settings.xml:
+3. Allow the following permissions in your AndroidManifest.xml:
 
-	<!-- lifepics -->
-	<string name="lp_partner_source_id">11</string>
+        <uses-permission android:name="android.permission.INTERNET"/>
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
-Then, allow the following permissions in your AndroidManifest.xml:
+4. Add Google Play Services as a dependency.  You can do this in Module Settings.  Select your app, then the "Dependencies" tab, then add the "Google Play Services" library dependency.
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+5. In the &lt;application&gt; tag, you'll need to add these &lt;meta-data&gt;: ([supply your own Google Maps v2 key](https://developers.google.com/maps/documentation/android/start#obtain_a_google_maps_api_key))
 	
-In the &lt;application&gt; tag, you'll need to add these &lt;meta-data&gt; tags: ([you'll need a Google Maps v2 key](https://developers.google.com/maps/documentation/android/start#obtain_a_google_maps_api_key))
-	
-	<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="YOUR_MAPS_V2_KEY" />
-    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="YOUR_MAPS_V2_KEY" />
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
     	
-Also, add the following activities in your AndroidManifest.xml:
+6. Add the following activities in your AndroidManifest.xml:
 
-    <activity android:name="com.taylorcorp.lifepics.order.OrderActivity" android:screenOrientation="portrait"/>
-    <activity android:name="com.taylorcorp.lifepics.cart.CartActivity" android:screenOrientation="portrait"/>
-    <activity android:name="com.taylorcorp.lifepics.locations.PickupLocationsActivity" android:screenOrientation="portrait"/>
-    <activity android:name="com.taylorcorp.lifepics.locations.ChangeLocationActivity" android:screenOrientation="portrait"/>
-    <activity android:name="com.taylorcorp.lifepics.contactinfo.ContactInfoActivity" android:screenOrientation="portrait"/>
-    <activity android:name="com.taylorcorp.lifepics.order.OrderCompletedActivity" android:screenOrientation="portrait"/>
-
-Then, to support mapping, you need to [provide a key](https://developers.google.com/maps/documentation/android/start#obtain_a_google_maps_api_key) for the V2 Maps:
-
-	<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="YOUR_KEY_HERE" />
+        <activity android:name="com.taylorcorp.lifepics.products.ProductsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.taylorcorp.lifepics.order.OrderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.taylorcorp.lifepics.cart.CartActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.taylorcorp.lifepics.locations.PickupLocationsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.taylorcorp.lifepics.contactinfo.ContactInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.taylorcorp.lifepics.order.OrderCompletedActivity" android:screenOrientation="portrait"/>
     
-Now, in your program logic, you'll want to connect to the LifePics network by providing your Partner ID, Source ID, and password. You can do this in the activity (or fragment) where you plan on presenting the LifePics print selector:
+7. Now, in your program logic, you'll want to connect to the LifePics network by providing your Partner ID, Source ID, and password. You can do this in the activity (or fragment) where you plan on presenting the LifePics print selector:
 
-	service.startSession(this, "<YOUR PARTNER ID>", "<YOUR PASSWORD>", new LifePicsWebServiceResponse() {
-		@Override
-		public void resultHandler(boolean isSuccess, Object response, ErrorBE error, String message) {
-			// respond however you like
-		}
-	});
+        service.startSession(this, "<YOUR PARTNER ID>", "<YOUR PASSWORD>", new LifePicsWebServiceResponse() {
+            @Override
+		    public void resultHandler(boolean isSuccess, Object response, ErrorBE error, String message) {
+			    // if there's an error, you won't be able to connect
+            }
+        });
 
-Finally, when you want to present the print selector:
+8. Finally, when you want to present the LifePics photo selector:
 
-	Intent i = new Intent(getActivity(), ProductsActivity.class);
-	startActivity(i);
+        Intent i = new Intent(getActivity(), ProductsActivity.class);
+        startActivity(i);
 
 
 Customization
 -------------
 
-You can customize the colors used by the LifePics Order Activity by tweaking the primary and secondary colors in lp_colors.xml:
+You can customize the colors used by the LifePics Order Activity by tweaking the primary and secondary colors in lp\_colors.xml:
 
 	<!-- tints -->
 	<color name="lp_primary_tint_color">#3bb021</color>

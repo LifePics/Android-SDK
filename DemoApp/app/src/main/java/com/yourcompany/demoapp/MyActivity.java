@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.taylorcorp.lifepics.model.purchases.ShoppingCart;
 import com.taylorcorp.lifepics.order.OrderActivity;
+import com.taylorcorp.lifepics.products.ProductsActivity;
 import com.taylorcorp.lifepics.utils.AlertUtils;
 import com.taylorcorp.lifepics.webservices.LifePicsWebService;
 import com.taylorcorp.lifepics.webservices.LifePicsWebServiceResponse;
@@ -38,7 +39,7 @@ public class MyActivity extends ActionBarActivity {
     public void didClick(View v) {
         ShoppingCart.getInstance().clear();
 
-        Intent i = new Intent(this, OrderActivity.class);
+        Intent i = new Intent(this, ProductsActivity.class);
         startActivity(i);
     }
 }

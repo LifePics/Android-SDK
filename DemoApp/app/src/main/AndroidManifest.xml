@@ -28,10 +28,10 @@
         </activity>
 
         <!-- LIFEPICS -->
+        <activity android:name="com.taylorcorp.lifepics.products.ProductsActivity" android:screenOrientation="portrait"/>
         <activity android:name="com.taylorcorp.lifepics.order.OrderActivity" android:screenOrientation="portrait"/>
         <activity android:name="com.taylorcorp.lifepics.cart.CartActivity" android:screenOrientation="portrait"/>
         <activity android:name="com.taylorcorp.lifepics.locations.PickupLocationsActivity" android:screenOrientation="portrait"/>
-        <activity android:name="com.taylorcorp.lifepics.locations.ChangeLocationActivity" android:screenOrientation="portrait"/>
         <activity android:name="com.taylorcorp.lifepics.contactinfo.ContactInfoActivity" android:screenOrientation="portrait"/>
         <activity android:name="com.taylorcorp.lifepics.order.OrderCompletedActivity" android:screenOrientation="portrait"/>
     </application>

@@ -18,8 +18,8 @@
     <string name="lp_order_finish_up">FINISH</string>
     <string name="lp_square">Square</string>
     <string name="lp_landscape_portrait">Landscape &amp; Portrait</string>
-    <string name="lp_photos_multiplied">%1$d Photos x %2$d Prints = </string>
-    <string name="lp_photos_total"> %1$d Total</string>
+    <string name="lp_photos_multiplied">%1$d Photos x %2$d Prints =&#160;</string>
+    <string name="lp_photos_total">%1$d Total</string>
     <string name="lp_cart_continue_shopping">Continue Shopping</string>
     <string name="lp_cart_pick_up">I\'ll Pick Up My Prints</string>
     <string name="lp_cart_find_photofinishers">Find Photofinishers</string>
@@ -27,7 +27,8 @@
     <string name="lp_cart_empty_cart_message">Please order some photos.</string>
     <string name="lp_cart_photo_prints_up">PHOTO PRINTS</string>
     <string name="lp_locations_number">%1$d LOCATIONS NEAR YOU</string>
-    <string name="lp_locations_close_number">%1$d Locations Close-by</string>
+    <string name="lp_locations_close_number">%1$d</string>
+    <string name="lp_locations_close_by">Locations Close-by</string>
     <string name="lp_searching_for_locations">SEARCHING FOR LOCATIONS</string>
     <string name="lp_change_location">Change Location</string>
     <string name="lp_contact_information">Contact Information</string>
@@ -69,9 +70,9 @@
     <string name="lp_uploading_images">Uploading Images</string>
     <string name="lp_submitting_order">Submitting Order</string>
     <string name="lp_order">Order</string>
+    <string name="lp_directions">Directions</string>
     <string name="lp_real_or_fake_order">Would you like to submit a real order, or just fake it?</string>
     <string name="lp_select">Select</string>
-    <string name="lp_selected">Selected</string>
     <string name="lp_cart_item_description">%1$d Prints Each - %2$.0f\" x %3$.0f\" %4$s</string>
     <string name="lp_cart_item_description_single">%1$d Print Each - %2$.0f\" x %3$.0f\" %4$s</string>
     <string name="lp_cancel_are_you_sure_title">Cancel</string>
@@ -81,4 +82,5 @@
     <string name="lp_bad_zip_code_title">Bad Zip Code</string>
     <string name="lp_bad_zip_code">Incorrect format for zip code.</string>
     <string name="lp_store_distance_from_user">%s away</string>
+    <string name="lp_store_address_with_distance">$1s ($2s)</string>
 </resources>

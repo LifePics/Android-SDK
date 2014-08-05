@@ -3,6 +3,7 @@
     android:layout_height="match_parent">
 
     <ScrollView
+        android:id="@+id/lp_contact_info_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -71,7 +72,7 @@
                         <View
                             android:layout_width="1dp"
                             android:layout_height="match_parent"
-                            android:background="@color/lp_primary_tint_color" />
+                            android:background="@color/lp_grey" />
 
                         <EditText
                             android:id="@+id/lp_edit_last_name"
@@ -89,7 +90,7 @@
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="1dp"
-                        android:background="@color/lp_primary_tint_color" />
+                        android:background="@color/lp_grey" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -120,7 +121,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/lp_component_vertical_margin"
-                    android:layout_marginTop="@dimen/lp_component_vertical_margin"
                     android:gravity="center"
                     android:text="text"/>
 
@@ -130,6 +130,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/lp_component_btn_side_margin"
                     android:layout_marginRight="@dimen/lp_component_btn_side_margin"
+                    android:layout_marginTop="@dimen/lp_component_vertical_btn_spacing"
                     android:background="@color/lp_secondary_tint_color"
                     android:text="@string/lp_submit_order"
                     android:textSize="@dimen/lp_contact_info_btn_txt_size"

@@ -2,28 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bc1dc367-c8fa-4e4d-bcfb-a7f23a62ab64" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DemoApp/DemoApp.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/DemoApp/app/app.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/libs/LifePicsSDK.jar" afterPath="$PROJECT_DIR$/DemoApp/app/libs/LifePicsSDK.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Configure Photo Sources.md" afterPath="$PROJECT_DIR$/Configure Photo Sources.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/build.gradle" afterPath="$PROJECT_DIR$/DemoApp/build.gradle" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/drawable/lp_dv716064_2.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android Files/LifePicsSDK.jar" afterPath="$PROJECT_DIR$/Android Files/LifePicsSDK.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android Files/res.zip" afterPath="$PROJECT_DIR$/Android Files/res.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_activity_cart.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_activity_cart.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_cart_item.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_cart_item.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_cart_items_item.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_cart_items_item.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_cart_items_pickup_item.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_cart_items_pickup_item.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/values/lp_colors.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/values/lp_colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/values/lp_customer_settings.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/values/lp_customer_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/values/lp_dimens.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/values/lp_dimens.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_fragment_cart.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_fragment_cart.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_fragment_contact_info.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_fragment_contact_info.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_fragment_full_size_photo_image.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_fragment_full_size_photo_image.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_fragment_full_size_photo_images.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_fragment_full_size_photo_images.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_fragment_order_cart_bar.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_fragment_order_cart_bar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_fragment_photo_images.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_fragment_photo_images.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_fragment_order_completed.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_fragment_order_completed.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_fragment_quantification.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_fragment_quantification.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_list_item_photo_image.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_list_item_photo_image.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_list_item_photo_album.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_list_item_photo_album.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_list_item_store.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_list_item_store.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_marker_annotation.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_marker_annotation.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_order_item.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/layout/lp_order_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/drawable/lp_quant_minus_selector.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/drawable/lp_quant_minus_selector.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/drawable/lp_quant_plus_selector.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/drawable/lp_quant_plus_selector.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/drawable/lp_radio_button_checked.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/drawable/lp_radio_button_checked.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/drawable/lp_radio_button_unchecked.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/drawable/lp_radio_button_unchecked.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/drawable/lp_rounded_border.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/drawable/lp_rounded_border.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/values/lp_strings.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/values/lp_strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/values/lp_styles.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/values/lp_styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/values-v11/lp_styles.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/values-v11/lp_styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DemoApp/app/src/main/res/values-v14/lp_styles.xml" afterPath="$PROJECT_DIR$/DemoApp/app/src/main/res/values-v14/lp_styles.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="droid-sdk.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,9 +66,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="278" />
-    <option name="y" value="119" />
-    <option name="width" value="1400" />
+    <option name="x" value="15" />
+    <option name="y" value="32" />
+    <option name="width" value="1713" />
     <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -87,7 +97,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -116,13 +125,54 @@
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="facebook" />
+              <option name="myItemId" value="DemoApp" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="droid-sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="droid-sdk" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DemoApp" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="droid-sdk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="droid-sdk" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DemoApp" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.android.tools.idea.gradle.projectView.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -136,7 +186,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../droid-lifepics" />
@@ -288,7 +338,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="278" y="119" width="1400" height="1000" extended-state="0" />
+    <frame x="15" y="32" width="1713" height="1000" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -308,7 +358,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20431991" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -403,6 +453,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

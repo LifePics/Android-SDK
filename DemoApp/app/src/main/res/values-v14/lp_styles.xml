@@ -5,7 +5,7 @@
     </style>
 
     <style name="lp_order_theme" parent="@style/Theme.AppCompat.Light">
-        <item name="@android:divider">@color/lp_divider_color</item>
+        <item name="@android:divider">@color/lp_grey</item>
     </style>
 
     <style name="lp_action_bar_theme">
@@ -14,10 +14,16 @@
 
     <style name="lp_action_bar" parent="android:style/Widget.Holo.Light.ActionBar">
         <item name="android:showDividers">middle</item>
-        <item name="android:divider">@color/lp_primary_tint_color</item>
-        <item name="android:actionBarDivider">@color/lp_primary_tint_color</item>
+        <item name="background">@color/lp_primary_tint_color</item>
         <item name="android:background">@color/lp_white_color</item>
-        <item name="background">@color/lp_white_color</item>
+        <item name="android:backgroundStacked">@color/lp_white_color</item>
+        <item name="android:backgroundSplit">@drawable/lp_tab_bar_background</item>
+        <item name="android:actionBarTabStyle">@style/lp_action_bar_tab_style</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="lp_action_bar_tab_style" >
+        <item name="android:background">@drawable/lp_tab_bar_background</item>
     </style>
 
     <!-- common -->
@@ -128,19 +134,18 @@
         <item name="android:textSize">16sp</item>
     </style>
 
-    <!-- order done -->
-    <style name="lp_order_done_title" parent="lp_normal_text">
-        <item name="android:textColor">@color/lp_primary_tint_color</item>
-        <item name="android:textSize">34sp</item>
-    </style>
-
-    <style name="lp_order_done_message" parent="lp_normal_text">
-        <item name="android:textSize">16sp</item>
-    </style>
-
     <!-- change location -->
     <style name="lp_list_item_location" parent="lp_normal_text">
         <item name="android:textSize">21sp</item>
+    </style>
+
+    <style name="CustomActionBarTheme" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarTabTextStyle">@style/MyActionBarTabText</item>
+    </style>
+
+    <!-- ActionBar tabs text styles -->
+    <style name="MyActionBarTabText" parent="@android:style/Widget.Holo.ActionBar.TabText">
+        <item name="android:textColor">@color/lp_black_color</item>
     </style>
 
 </resources>

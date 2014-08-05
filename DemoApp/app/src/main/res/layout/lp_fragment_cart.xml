@@ -8,8 +8,8 @@
         android:background="@color/lp_primary_tint_color"
         android:layout_alignParentTop="true"/>
 
-
     <ScrollView
+        android:id="@+id/lp_cart_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -18,19 +18,19 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <!--<TextView
+            <TextView
                 style="@style/lp_green_bar_header"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="4dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
                 android:text="@string/lp_cart_photo_prints_up"
                 android:background="@color/lp_white_color"/>
 
             <View
                 android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:background="@color/lp_primary_tint_color" />-->
+                android:layout_height="2dp"
+                android:background="@color/lp_primary_tint_color" />
 
             <LinearLayout
                 android:id="@+id/lp_layout_cart_items"
@@ -72,7 +72,7 @@
                     android:layout_height="@dimen/lp_cart_button_height"
                     android:layout_marginLeft="@dimen/lp_cart_button_horizontal_margin"
                     android:layout_marginRight="@dimen/lp_cart_button_horizontal_margin"
-                    android:background="@color/lp_primary_tint_color"
+                    android:background="@color/lp_secondary_tint_color"
                     android:text="@string/lp_cart_pick_up"
                     android:textSize="@dimen/lp_cart_button_text_size"
                     android:textColor="@color/lp_white_color"/>
@@ -85,20 +85,55 @@
                     android:layout_marginRight="@dimen/lp_cart_button_horizontal_margin"
                     android:background="@color/lp_semi_transparent">
 
+                <RelativeLayout
+                    android:id="@+id/lp_locations_nearby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
                     <TextView
-                        android:id="@+id/locations_nearby"
+                        android:id="@+id/lp_locations_nearby_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/lp_cart_text_left_spacing"
+                        android:text="@string/lp_locations_close_number"
+                        android:textSize="16dp"
+                        android:textColor="@color/lp_primary_tint_color"
+                        android:textStyle="bold"/>
+
+                    <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="@dimen/lp_cart_text_left_spacing"
-                        android:text="@string/lp_locations_close_number" />
+                        android:text="@string/lp_locations_close_by"
+                        android:layout_toRightOf="@id/lp_locations_nearby_text"
+                        android:textSize="16dp" />
 
-                    <ProgressBar
+                    </RelativeLayout>
+
+                    <RelativeLayout
                         android:id="@+id/progress_bar"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="4dp"
-                        android:visibility="gone" />
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone">
+                        <ProgressBar
+                            android:id="@+id/progress_bar_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="4dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="@string/lp_searching_for_locations"
+                            android:layout_toRightOf="@id/progress_bar_icon"
+                            android:textSize="14dp"/>
+
+                    </RelativeLayout>
                 </RelativeLayout>
             </LinearLayout>
         </LinearLayout>

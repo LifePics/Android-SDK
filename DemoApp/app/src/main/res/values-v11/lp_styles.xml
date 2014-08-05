@@ -14,9 +14,9 @@
 
     <style name="lp_action_bar" parent="android:style/Widget.Holo.Light.ActionBar">
         <item name="android:showDividers">middle</item>
+        <item name="background">@color/lp_primary_tint_color</item>
         <item name="android:background">@color/lp_white_color</item>
-        <item name="background">@color/lp_white_color</item>
-        <item name="android:divider">@color/lp_primary_tint_color</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
     <!-- common -->
@@ -124,16 +124,6 @@
     <style name="lp_cart_edit" parent="lp_normal_text">
         <item name="android:background">@null</item>
         <item name="android:textColor">@color/lp_primary_tint_color</item>
-        <item name="android:textSize">16sp</item>
-    </style>
-
-    <!-- order done -->
-    <style name="lp_order_done_title" parent="lp_normal_text">
-        <item name="android:textColor">@color/lp_primary_tint_color</item>
-        <item name="android:textSize">34sp</item>
-    </style>
-
-    <style name="lp_order_done_message" parent="lp_normal_text">
         <item name="android:textSize">16sp</item>
     </style>
 

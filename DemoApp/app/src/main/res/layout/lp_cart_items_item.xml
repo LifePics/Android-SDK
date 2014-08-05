@@ -3,16 +3,20 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="64dp"
+    android:layout_height="wrap_content"
     android:background="@color/lp_cart_line_item_background">
 
     <ImageView
         android:id="@+id/lp_img_preview_image"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
-        android:layout_margin="16dp"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"/>
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -20,7 +24,7 @@
         android:layout_toLeftOf="@id/lp_btn_edit"
         android:layout_toRightOf="@id/lp_img_preview_image"
         android:layout_centerVertical="true"
-        android:layout_marginRight="16dp"
+        android:layout_marginRight="8dp"
         android:orientation="vertical"
         android:layout_alignParentRight="true">
 
@@ -39,13 +43,14 @@
 
             <TextView
                 android:id="@+id/lp_txt_price"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="right"
                 android:textColor="@color/lp_primary_tint_color"
-                android:textSize="22sp"
-                android:text="Square"/>
+                android:textSize="20sp"
+                android:text="$0.00"
+                android:textStyle="bold"/>
         </LinearLayout>
 
         <LinearLayout
@@ -60,7 +65,7 @@
                 android:textSize="14sp"/>
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="right"
@@ -73,7 +78,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/lp_light_separator_bar"
+        android:background="@color/lp_grey"
         android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

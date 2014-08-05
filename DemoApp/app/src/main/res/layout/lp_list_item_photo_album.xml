@@ -11,7 +11,7 @@
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:layout_margin="8dp"
-        android:scaleType="centerInside"/>
+        android:scaleType="fitXY"/>
 
     <TextView
         android:id="@+id/lp_txt_title"

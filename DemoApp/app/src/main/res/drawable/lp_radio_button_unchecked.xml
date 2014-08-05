@@ -4,7 +4,7 @@
     <item android:top="0dp" android:left="0dp">
         <shape android:shape="oval">
             <stroke android:color="@color/lp_primary_tint_color" android:width="1dp"/>
-            <size android:width="20dp" android:height="20dp"/>
+            <size android:width="30dp" android:height="30dp"/>
         </shape>
     </item>
 </layer-list>

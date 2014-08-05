@@ -33,15 +33,26 @@
         style="@style/lp_full_size_select_layout"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal">
 
         <Button
             android:id="@+id/lp_btn_selected"
             style="@style/lp_full_size_select_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
             android:background="@color/lp_transparent"
-            android:text="Select" />
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            style="@style/lp_full_size_select_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/lp_transparent"
+            android:text="Select"
+            android:layout_marginLeft="-40dp"
+            android:layout_toRightOf="@id/lp_btn_selected"
+            android:layout_centerVertical="true"/>
     </RelativeLayout>
 </RelativeLayout>

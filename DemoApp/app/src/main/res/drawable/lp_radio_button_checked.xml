@@ -4,14 +4,14 @@
     <item android:top="0dp" android:left="0dp">
         <shape android:shape="oval">
             <stroke android:color="@color/lp_primary_tint_color" android:width="1dp"/>
-            <size android:width="20dp" android:height="20dp"/>
+            <size android:width="30dp" android:height="30dp"/>
         </shape>
     </item>
 
     <item android:top="2dp" android:left="2dp" android:bottom="2dp" android:right="2dp">
         <shape android:shape="oval">
             <solid android:color="@color/lp_primary_tint_color" android:width="1dp"/>
-            <size android:width="16dp" android:height="16dp"/>
+            <size android:width="26dp" android:height="26dp"/>
         </shape>
     </item>
 </layer-list>

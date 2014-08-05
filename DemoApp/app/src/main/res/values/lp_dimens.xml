@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="lp_activity_horizontal_margin">16dp</dimen>
+    <dimen name="lp_activity_horizontal_margin">8dp</dimen>
     <dimen name="lp_activity_vertical_margin">16dp</dimen>
+    <dimen name="lp_component_horizontal_margin">8dp</dimen>
     <dimen name="lp_component_vertical_margin">16dp</dimen>
-    <dimen name="lp_component_vertical_btn_spacing">40dp</dimen>
-    <dimen name="lp_component_btn_side_margin">40dp</dimen>
+    <dimen name="lp_component_vertical_btn_spacing">30dp</dimen>
+    <dimen name="lp_component_btn_side_margin">30dp</dimen>
     <dimen name="lp_button_height">48dp</dimen>
 
-    <dimen name="lp_cart_button_horizontal_margin">60dp</dimen>
-    <dimen name="lp_cart_button_height">40dp</dimen>
+    <dimen name="lp_cart_button_horizontal_margin">47dp</dimen>
+    <dimen name="lp_cart_button_height">51dp</dimen>
     <dimen name="lp_cart_button_text_size">20sp</dimen>
-    <dimen name="lp_cart_textview_height">44dp</dimen>
-    <dimen name="lp_cart_button_spacing">60dp</dimen>
-    <dimen name="lp_cart_text_left_spacing">16dp</dimen>
+    <dimen name="lp_cart_textview_height">51dp</dimen>
+    <dimen name="lp_cart_button_spacing">40dp</dimen>
+    <dimen name="lp_cart_text_left_spacing">8dp</dimen>
 
-    <dimen name="lp_image_check_mark_size">48dp</dimen>
+    <dimen name="lp_image_check_mark_size">20dp</dimen>
 
-    <dimen name="lp_contact_info_btn_txt_size">22dp</dimen>
+    <dimen name="lp_contact_info_btn_txt_size">20sp</dimen>
 </resources>

@@ -1,65 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
-    android:layout_height="72dp"
-    android:background="@android:color/white">
+    android:layout_height="wrap_content"
+    android:background="@drawable/lp_map_annotation_border">
 
     <ImageView
-        android:id="@+id/image"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:id="@+id/lp_image"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"/>
 
     <RelativeLayout
-        android:id="@+id/textholder"
+        android:id="@+id/lp_textholder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="12dp"
-        android:layout_toRightOf="@id/image"
+        android:layout_marginRight="12dp"
+        android:layout_toRightOf="@id/lp_image"
         android:layout_centerVertical="true">
 
         <TextView
-            android:id="@+id/store_name"
+            android:id="@+id/lp_store_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Store"
-            android:textSize="20sp" />
+            android:textSize="18sp"
+            android:textColor="@color/lp_primary_tint_color"/>
 
         <TextView
-            android:id="@+id/address"
+            android:id="@+id/lp_address"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/store_name"
+            android:layout_below="@id/lp_store_name"
             android:textSize="12sp"
             android:text="address" />
 
         <TextView
-            android:id="@+id/product_cost"
+            android:id="@+id/lp_product_cost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/address"
+            android:layout_below="@id/lp_address"
             android:text="cost"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold" />
 
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/action_holder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@id/textholder"
-        android:layout_alignTop="@id/textholder"
-        android:layout_marginLeft="24dp"
-        android:layout_toRightOf="@id/textholder"
-        >
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:background="@drawable/lp_ic_arrow" />
     </RelativeLayout>
 
 </RelativeLayout>

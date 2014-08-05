@@ -3,7 +3,7 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:state_enabled="false"
-        android:drawable="@drawable/lp_btn_minus_inactive" />
+        android:drawable="@drawable/lp_btn_minus_active" />
     <item
         android:state_pressed="true"
         android:state_enabled="true"
@@ -11,8 +11,8 @@
     <item
         android:state_focused="true"
         android:state_enabled="true"
-        android:drawable="@drawable/lp_btn_minus_inactive" />
+        android:drawable="@drawable/lp_btn_minus_active" />
     <item
         android:state_enabled="true"
-        android:drawable="@drawable/lp_btn_minus_inactive" />
+        android:drawable="@drawable/lp_btn_minus_active" />
 </selector>
