@@ -67,6 +67,7 @@
     <orderEntry type="library" exported="" name="play-services-5.0.77" level="project" />
     <orderEntry type="library" exported="" name="picasso-2.3.2" level="project" />
     <orderEntry type="library" exported="" name="LifePicsSDK" level="project" />
+    <orderEntry type="module" module-name="facebook" exported="" />
   </component>
 </module>
 

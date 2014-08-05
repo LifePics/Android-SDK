@@ -57,7 +57,7 @@ Installation
         <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
-4. Add Google Play Services as a dependency.  You can do this in Module Settings.  Select your app, then the "Dependencies" tab, then add the "Google Play Services" library dependency.
+4. Add Google Play Services and the V7 Support Library as a dependencies.  You can do this in Module Settings.  Select your app, then the "Dependencies" tab, then add these as library dependencies.
 
 5. In the &lt;application&gt; tag, you'll need to add these &lt;meta-data&gt;: ([supply your own Google Maps v2 key](https://developers.google.com/maps/documentation/android/start#obtain_a_google_maps_api_key))
 	
