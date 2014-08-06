@@ -1,4 +1,4 @@
-LifePics Android SDK Version 1.0.0
+LifePics Android SDK Version 1.0.1
 ==================================
 
 
