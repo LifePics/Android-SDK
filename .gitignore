@@ -1,2 +1,10 @@
-/facebook/build/
 Thumbs.db
+.DS_Store
+build
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/datasources.xml
+.idea/dataSources.ids
+proguard
+local.properties
+
