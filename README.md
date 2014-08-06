@@ -66,13 +66,41 @@ Installation
     	
 6. Add the following activities in your AndroidManifest.xml:
 
-        <activity android:name="com.taylorcorp.lifepics.products.ProductsActivity" android:screenOrientation="portrait"/>
-        <activity android:name="com.taylorcorp.lifepics.order.OrderActivity" android:screenOrientation="portrait"/>
-        <activity android:name="com.taylorcorp.lifepics.cart.CartActivity" android:screenOrientation="portrait"/>
-        <activity android:name="com.taylorcorp.lifepics.locations.PickupLocationsActivity" android:screenOrientation="portrait"/>
-        <activity android:name="com.taylorcorp.lifepics.contactinfo.ContactInfoActivity" android:screenOrientation="portrait"/>
-        <activity android:name="com.taylorcorp.lifepics.order.OrderCompletedActivity" android:screenOrientation="portrait"/>
-    
+        <activity
+            android:name="com.taylorcorp.lifepics.products.ProductsActivity"
+            android:screenOrientation="sensorPortrait" />
+
+        <activity android:name="com.taylorcorp.lifepics.order.OrderActivity"
+            android:screenOrientation="sensorPortrait"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taylorcorp.lifepics.app.activities.IntroActivity" />
+        </activity>
+
+        <activity android:name="com.taylorcorp.lifepics.cart.CartActivity"
+            android:screenOrientation="sensorPortrait"
+            android:launchMode="singleTop">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taylorcorp.lifepics.order.OrderActivity" />
+        </activity>
+
+        <activity
+            android:name="com.taylorcorp.lifepics.locations.PickupLocationsActivity"
+            android:screenOrientation="sensorPortrait"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name="com.taylorcorp.lifepics.contactinfo.ContactInfoActivity"
+            android:screenOrientation="sensorPortrait"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name="com.taylorcorp.lifepics.order.OrderCompletedActivity"
+            android:screenOrientation="sensorPortrait"
+            android:launchMode="singleTop"/>
+
 7. Now, in your program logic, you'll want to connect to the LifePics network by providing your Partner ID, Source ID, and password. You can do this in the activity (or fragment) where you plan on presenting the LifePics print selector:
 
         service.startSession(this, "<YOUR PARTNER ID>", "<YOUR PASSWORD>", new LifePicsWebServiceResponse() {
