@@ -103,7 +103,7 @@ Installation
 
 7. Now, in your program logic, you'll want to connect to the LifePics network by providing your Partner ID, Source ID, and password. You can do this in the activity (or fragment) where you plan on presenting the LifePics print selector:
 
-        service.startSession(this, "<YOUR PARTNER ID>", "<YOUR PASSWORD>", new LifePicsWebServiceResponse() {
+        service.startSession("<YOUR PARTNER ID>", "<YOUR PASSWORD>", new LifePicsWebServiceResponse() {
             @Override
 		    public void resultHandler(boolean isSuccess, Object response, ErrorBE error, String message) {
 			    // if there's an error, you won't be able to connect
