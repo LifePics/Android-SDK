@@ -89,7 +89,7 @@ Now, you'll need to configure it as an image source:
 ### Google
 
 1. Create a new project on your [Google Dashboard](https://console.developers.google.com/project).
-2. In the *Apis and auth* section, add your app's information and bundle ID.
+2. In the *Apis and auth* section, add your app's information and package name.
 3. Add a string resource for the key *lp_google_key* and set it to your provided *OAuth Client ID (in APIs & auth section)*.
 
 ### SmugMug

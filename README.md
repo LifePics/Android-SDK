@@ -63,6 +63,8 @@ Installation
         <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
         <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
         <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+	    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
 
 4. Add Google Play Services and the V7 Support Library as a dependencies.  You can do this in Module Settings.  Select your app, then the "Dependencies" tab, then add these as library dependencies.
 
