@@ -1,4 +1,4 @@
-LifePics Android SDK Version 1.0.2
+LifePics Android SDK Version 1.0.3
 ==================================
 
 
@@ -15,15 +15,6 @@ To learn more about developer revenue share please read the enclosed [LifePics D
 To request developer keys from LifePics please email a complete signed copy of the LifePics Developer Agreement to [busdev@lifepics.com](mailto:busdev@lifepics.com). LifePics will generate a set of developer keys and email them back to you. Please see Schedule 1 in the [LifePics Developer Agreement](https://github.com/LifePics/iOS-SDK/blob/master/LifePics%20Developer%20Agreement.pdf) on documents to send to LifePics to be eligible for developer revenue share payments.
 
 Please email any questions about the OPEN program to [busdev@lifepics.com](mailto:busdev@lifepics.com).
-
-New in Version 1.0.2
---------------------
-
-***Features***
-
-* Added LifePics Image Support
-* Added Google Image Support
-* Added SmugMug Image Support
 
 The LifePics Android SDK
 ------------------------
@@ -135,3 +126,17 @@ You can customize the colors used by the LifePics Order Activity by tweaking the
 	<color name="lp_secondary_tint_color">#fcb024</color>
 
 Further interface customizations can be made using the XML files.
+
+New in Version 1.0.3
+--------------------
+
+* Added ability to log out of image sources
+* Fixed Facebook permissions
+
+New in Version 1.0.2
+--------------------
+
+* Added LifePics Image Support
+* Added Google Image Support
+* Added SmugMug Image Support
+

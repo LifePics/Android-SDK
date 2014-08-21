@@ -88,6 +88,9 @@
     <string name="lp_store_distance_from_user">%s away</string>
     <string name="lp_store_address_with_distance">$1s ($2s)</string>
     <string name="lp_name_and_password_required">Email and Password are required.</string>
-
+    <string name="lp_photo_source_logout">Logout</string>
+    <string name="lp_photo_source_log_out">Log Out</string>
+    <string name="lp_photo_source_logout_confirm_title">Logout</string>
+    <string name="lp_photo_source_logout_confirm_message">Are you sure you want to log out out of %1$s?</string>
     <string name="lp_terms_and_conditions"><![CDATA[By clicking Submit Order I agree to the<br><a href="https://photo.lifepics.com/Content.aspx?id=TermsAndConditions">Terms Of Service</a> and <a href="https://ww2.lifepics.com/Privacy-Policy.htm">Privacy Policy</a>. ]]></string>
 </resources>

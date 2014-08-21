@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="lp_lifepics_version">1.0.1</string>
+    <string name="lp_lifepics_version">1.0.3</string>
 
     <string name="lp_store_search_radius">5</string>
     <bool name="lp_is_metric">false</bool>

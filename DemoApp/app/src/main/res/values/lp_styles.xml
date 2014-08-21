@@ -87,6 +87,11 @@
         <item name="android:textSize">18sp</item>
     </style>
 
+    <style name="lp_photo_source_logout" parent="lp_normal_text">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/lp_primary_tint_color</item>
+    </style>
+
     <!-- photo albums -->
     <style name="lp_photo_album_title" parent="lp_normal_text">
         <item name="android:textSize">18sp</item>
