@@ -1,6 +1,7 @@
 <resources>
 
     <style name="lp_app_theme" parent="@style/Theme.AppCompat.Light">
+        <item name="actionBarStyle">@style/ActionBar.Transparent.Lp</item>
     </style>
 
     <style name="lp_order_theme" parent="@style/Theme.AppCompat.Light">
@@ -9,6 +10,11 @@
 
     <style name="lp_action_bar_theme">
         <item name="android:background">#ffffff</item>
+    </style>
+
+    <style parent="@style/Widget.AppCompat.Light.ActionBar" name="ActionBar.Transparent.Lp">
+        <item name="background">@drawable/lp_ab_background</item>
+        <item name="android:background">@drawable/lp_ab_background</item>
     </style>
 
     <!-- common -->
@@ -138,6 +144,10 @@
     <!-- change location -->
     <style name="lp_list_item_location" parent="lp_normal_text">
         <item name="android:textSize">21sp</item>
+    </style>
+
+    <style parent="@style/Widget.AppCompat.Light.ActionBar.TabView" name="ActionBarTabStyle.Lp">
+        <item name="android:background">@drawable/lp_tab_indicator</item>
     </style>
 
 </resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lp_white_color"
+    android:orientation="vertical"
+    android:padding="60dp"
+    android:gravity="center">
+
+        <ImageView
+            android:id="@+id/lp_img_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/lp_email"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/lp_transparent"
+            android:hint="Email"
+            android:layout_marginTop="40dp"
+            android:padding="10dp"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/lp_password"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/lp_transparent"
+            android:hint="Password"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/lp_login"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Login"/>
+        <Button
+            android:id="@+id/lp_cancel"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Cancel"/>
+
+        <TextView
+            android:id="@+id/lp_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            />
+
+</LinearLayout>

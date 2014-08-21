@@ -15,4 +15,10 @@
         android:numColumns="3"
         android:verticalSpacing="4dp" />
 
+    <ProgressBar
+        android:id="@+id/lp_progress_bar"
+        android:layout_width="@dimen/lp_progress_bar_size"
+        android:layout_height="@dimen/lp_progress_bar_size"
+        android:layout_centerInParent="true" />
+
 </RelativeLayout>

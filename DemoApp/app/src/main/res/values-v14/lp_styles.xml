@@ -2,6 +2,7 @@
 
     <style name="lp_app_theme" parent="@style/Theme.AppCompat.Light">
         <item name="android:actionBarStyle">@style/lp_action_bar</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Lp</item>
     </style>
 
     <style name="lp_order_theme" parent="@style/Theme.AppCompat.Light">
@@ -15,7 +16,7 @@
     <style name="lp_action_bar" parent="android:style/Widget.Holo.Light.ActionBar">
         <item name="android:showDividers">middle</item>
         <item name="background">@color/lp_primary_tint_color</item>
-        <item name="android:background">@color/lp_white_color</item>
+        <item name="android:background">@drawable/lp_ab_background</item>
         <item name="android:backgroundStacked">@color/lp_white_color</item>
         <item name="android:backgroundSplit">@drawable/lp_tab_bar_background</item>
         <item name="android:actionBarTabStyle">@style/lp_action_bar_tab_style</item>

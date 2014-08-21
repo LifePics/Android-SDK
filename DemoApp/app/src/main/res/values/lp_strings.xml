@@ -3,6 +3,7 @@
 
     <!-- manifest -->
     <string name="lp_title_intro">LifePics SDK</string>
+    <string name="lp_order_is_in">Excellent!  Your Order Is In!</string>
 
     <!-- strings -->
     <string name="lp_add_to_cart">Add to Cart</string>
@@ -36,7 +37,8 @@
     <string name="lp_first_name_hint">First Name</string>
     <string name="lp_last_name_hint">Last Name</string>
     <string name="lp_phone_number_hint">Phone Number</string>
-    <string name="lp_submit_order">Submit Your Order!</string>
+    <string name="lp_email_hint">Email</string>
+    <string name="lp_submit_order">Submit Order</string>
     <string name="lp_ordering_live_motd"></string>
     <string name="lp_ordering_debug_motd">Pressing the Submit Order button will offer the choice to submit a fake request.</string>
     <string name="lp_fake_order">Fake It</string>
@@ -60,11 +62,13 @@
     <string name="lp_first_name_required">Your first name is required.</string>
     <string name="lp_last_name_required">Your last name is required.</string>
     <string name="lp_phone_number_required">Your phone number is required.</string>
+    <string name="lp_email_required">Your email address is required.</string>
+    <string name="lp_email_invalid">Your email address is invalid.</string>
     <string name="lp_cart_plus_tax">(+ tax)</string>
-    <string name="lp_order_is_in">Woohoo!  Your Order Is In!</string>
-    <string name="lp_order_is_in_message">You can pick up your order at <b>%1$s</b>, located at <b>%2$s</b>.</string>
+    <string name="lp_order_is_in_message"><![CDATA[You can pick up your order at <b>%1$s</b>, located at <b>%2$s</b>.]]></string>
     <string name="lp_done">Done</string>
     <string name="lp_items_in_your_cart">%1$d items in your cart.</string>
+    <string name="lp_item_in_your_cart">1 item in your cart.</string>
     <string name="lp_photo_prints">Photo Prints</string>
     <string name="lp_connecting">Connecting</string>
     <string name="lp_uploading_images">Uploading Images</string>
@@ -83,4 +87,7 @@
     <string name="lp_bad_zip_code">Incorrect format for zip code.</string>
     <string name="lp_store_distance_from_user">%s away</string>
     <string name="lp_store_address_with_distance">$1s ($2s)</string>
+    <string name="lp_name_and_password_required">Email and Password are required.</string>
+
+    <string name="lp_terms_and_conditions"><![CDATA[By clicking Submit Order I agree to the<br><a href="https://photo.lifepics.com/Content.aspx?id=TermsAndConditions">Terms Of Service</a> and <a href="https://ww2.lifepics.com/Privacy-Policy.htm">Privacy Policy</a>. ]]></string>
 </resources>

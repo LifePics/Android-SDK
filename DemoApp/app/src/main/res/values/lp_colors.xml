@@ -23,6 +23,10 @@
 
     <color name="lp_light_grey">#d8d8d8</color>
 
+    <color name="lp_lighter_grey">#e8e8e8</color>
+
+    <color name="lp_lightest_grey">#f8f8f8</color>
+
     <color name="lp_quarter_white">#80000000</color>
 
     <color name="lp_almost_white">#E6FFFFFF</color>
