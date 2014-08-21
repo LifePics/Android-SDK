@@ -6,6 +6,9 @@ The LifePics framework presents a set of image sources that can retrieve users' 
 * Instagram
 * Facebook
 * Flickr
+* Google
+* SmugMug
+* LifePics (always presented)
 * Seeded Images (developer-defined)
 
 To properly configure an image source, you generally need to provide a Public Key or options that are going to be unique to each one. Configuration for each source is explained below.
@@ -83,6 +86,16 @@ Now, you'll need to configure it as an image source:
             </intent-filter>
         </activity>
 
+### Google
+
+1. Create a new project on your [Google Dashboard](https://console.developers.google.com/project).
+2. In the *Apis and auth* section, add your app's information and bundle ID.
+3. Add a string resource for the key *lp_google_key* and set it to your provided *OAuth Client ID (in APIs & auth section)*.
+
+### SmugMug
+
+1. Create a new app key on [SmugMug's Website](https://secure.smugmug.com/settings/?nick=raptureinvenice#section=api-keys).
+2. Add a string resource for the key *lp_smugmug_key* and set it to your provided *Key*.
 
 ### Seeded Images
 

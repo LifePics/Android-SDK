@@ -1,4 +1,4 @@
-LifePics Android SDK Version 1.0.1
+LifePics Android SDK Version 1.0.2
 ==================================
 
 
@@ -16,6 +16,14 @@ To request developer keys from LifePics please email a complete signed copy of t
 
 Please email any questions about the OPEN program to [busdev@lifepics.com](mailto:busdev@lifepics.com).
 
+New in Version 1.0.2
+--------------------
+
+***Features***
+
+* Added LifePics Image Support
+* Added Google Image Support
+* Added SmugMug Image Support
 
 The LifePics Android SDK
 ------------------------
@@ -41,7 +49,6 @@ Installation
 1. Copy the following from Android Files/ into your libs/ folder:
 
         ksoap2-android-assembly-2.3-jar-with-dependencies.jar
-        picasso-2.3.2.jar
         LifePicsSDK.jar
 
 2. Unzip and copy the resources from res.zip into your project. You're free to change any of the values in these with discretion, but you should stay more focused on lp\_user\_settings.xml. You'll *need* to change at least one value in these resources, specifically the _lp\_partner\_source\_id_ value in lp\_customer\_settings.xml:
