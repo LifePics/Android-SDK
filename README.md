@@ -1,4 +1,4 @@
-LifePics Android SDK Version 1.0.3
+LifePics Android SDK Version 1.0.4
 ==================================
 
 
@@ -126,6 +126,14 @@ You can customize the colors used by the LifePics Order Activity by tweaking the
 	<color name="lp_secondary_tint_color">#fcb024</color>
 
 Further interface customizations can be made using the XML files.
+
+New in Version 1.0.4
+--------------------
+
+* Fixed demo samples loading.
+* Cleaned up LifePics and SmugMug authentication.
+* Pass back ContactInfo to the Order listener.
+* Limited V4.1 API support.
 
 New in Version 1.0.3
 --------------------

@@ -3,9 +3,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/lp_white_color"
+    android:background="@color/lp_dark_color"
     android:orientation="vertical"
-    android:padding="60dp"
+    android:paddingTop="60dp"
+    android:paddingBottom="60dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
     android:gravity="center">
 
         <ImageView
@@ -19,8 +22,9 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:background="@color/lp_transparent"
+            android:background="@color/lp_white_color"
             android:hint="Email"
+            android:typeface="sans"
             android:layout_marginTop="40dp"
             android:padding="10dp"
             android:inputType="textEmailAddress"/>
@@ -30,8 +34,9 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:background="@color/lp_transparent"
+            android:background="@color/lp_white_color"
             android:hint="Password"
+            android:typeface="sans"
             android:layout_marginTop="20dp"
             android:padding="10dp"
             android:inputType="textPassword"/>
@@ -41,18 +46,17 @@
             android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:background="@color/lp_primary_tint_color"
+            android:textSize="@dimen/lp_contact_info_btn_txt_size"
+            android:textStyle="bold"
+            android:textColor="@color/lp_white_color"
             android:text="Login"/>
-        <Button
-            android:id="@+id/lp_cancel"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Cancel"/>
 
-        <TextView
+    <TextView
             android:id="@+id/lp_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/lp_red_color"
             android:layout_marginTop="30dp"
             />
 

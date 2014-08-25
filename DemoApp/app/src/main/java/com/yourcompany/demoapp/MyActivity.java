@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.taylorcorp.lifepics.listeners.OrderStatusListener;
 import com.taylorcorp.lifepics.model.purchases.Cart;
+import com.taylorcorp.lifepics.model.purchases.ContactInfo;
 import com.taylorcorp.lifepics.model.purchases.ShoppingCart;
 import com.taylorcorp.lifepics.order.OrderActivity;
 import com.taylorcorp.lifepics.products.ProductsActivity;
@@ -27,6 +28,7 @@ public class MyActivity extends ActionBarActivity implements OrderStatusListener
 
         String partnerId = null;
         String password = null;
+        String developerId = null;
 
         if (partnerId == null || password == null) {
             AlertUtils.showSimpleAlert(this, "LifePics Partner ID Required", "To fully explore this demo, you'll first need to get a LifePics Partner ID. Put it in the MyActivity.java file. Details are provided in the ReadMe.\n\nWe'll take you as far as we can without a partner ID, but you'll see errors when trying to find photofinisher locations.");
@@ -35,7 +37,7 @@ public class MyActivity extends ActionBarActivity implements OrderStatusListener
         // listen in
         ShoppingCart.getInstance().setOrderStatusListener(this);
 
-        service.startSession(partnerId, password, new LifePicsWebServiceResponse() {
+        service.startSession(partnerId, password, developerId, new LifePicsWebServiceResponse() {
             @Override
             public void resultHandler(boolean b, Object o, com.taylorcorp.lifepics.webservices.entities.Error error, String s) {
 
@@ -51,7 +53,7 @@ public class MyActivity extends ActionBarActivity implements OrderStatusListener
     }
 
     @Override
-    public void didSubmitOrder(Cart cart) {
+    public void didSubmitOrder(Cart cart, ContactInfo orderInfo) {
         Log.d(TAG, "Order was submitted with cart item count: " + cart.getCartItems().size());
     }
 
