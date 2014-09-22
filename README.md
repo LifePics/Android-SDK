@@ -41,13 +41,40 @@ Installation
 
         ksoap2-android-assembly-2.3-jar-with-dependencies.jar
         LifePicsSDK.jar
+		stripe-java-1.15.1
+		gson-2.2.4
 
-2. Unzip and copy the resources from res.zip into your project. You're free to change any of the values in these with discretion, but you should stay more focused on lp\_user\_settings.xml. You'll *need* to change at least one value in these resources, specifically the _lp\_partner\_source\_id_ value in lp\_customer\_settings.xml:
+2. Unzip and copy the resources from res.zip into your project. You're free to change any of the values in these with discretion.
+3. Create a settings.xml file within the values folder.  Inside of this file define the following items with appropriate values:
 
-        <!-- lifepics -->
-        <string name="lp_partner_source_id">11</string>
+		<string name="lp_partner_id">ID</string>
+    	<string name="lp_password">PWD</string>
 
-3. Allow the following permissions in your AndroidManifest.xml:
+    	<string name="lp_partner_source_id">ID</string>
+    	
+    	<string name="lp_merchant_group_key">KEY</string>
+
+4. Create a keys.xml file within the values folder.  Inside of this file define the LifePics developer key (provided by LifePics):
+		
+		<string name="lp_developer_key">KEY</string>
+
+5. Turn on the Ship To Home option or the Pickup Locations option by adding the following items to the settings.xml file:
+
+		<bool name="lp_find_stores">true</bool>
+    	<bool name="lp_ship_to_home">false</bool>
+   If you turn on Ship To Home you must also specify a merchant ID within the settings.xml file:
+
+		<string name="lp_merchant_id">ID</string>
+   If you turn on Pickup Locations you should specify the store search radius within the settings.xml file:
+
+		<string name="lp_store_search_radius">MILES</string>
+6.  If you turn on Ship To Home you must obtain a Stripe Key in order to receive payments.  Define the Stripe key in the keys.xml file.
+
+		<string name="lp_stripe_publishable_key">key</string>
+
+  	Information about Stripe accounts can be found on the  [Stripe Website](http://www.stripe.com).
+
+5. Allow the following permissions in your AndroidManifest.xml:
 
         <uses-permission android:name="android.permission.INTERNET"/>
         <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -59,11 +86,24 @@ Installation
 
 4. Add Google Play Services and the V7 Support Library as a dependencies.  You can do this in Module Settings.  Select your app, then the "Dependencies" tab, then add these as library dependencies.
 
-5. In the &lt;application&gt; tag, you'll need to add these &lt;meta-data&gt;: ([supply your own Google Maps v2 key](https://developers.google.com/maps/documentation/android/start#obtain_a_google_maps_api_key))
+5. In the &lt;application&gt; section, you'll need to add these &lt;meta-data&gt; tags: ([supply your own Google Maps v2 key](https://developers.google.com/maps/documentation/android/start#obtain_a_google_maps_api_key))
 	
         <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="YOUR_MAPS_V2_KEY" />
-        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
-    	
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />  
+  If you do not turn on Pickup Locations then the Google Maps Key is not required.  
+
+6. Within the &lt;application&gt; tag, add the following value:
+
+		<application
+			...
+			android:largeHeap="true">
+
+7. Define your application class to be the class com.taylorcorp.lifepics.MainApplication or define your own application class that extends the LifePics class MainApplication.
+
+		<application
+			android:name="com.taylorcorp.lifepics.MainApplication"
+			...
+
 6. Add the following activities in your AndroidManifest.xml:
 
         <activity
@@ -87,11 +127,6 @@ Installation
         </activity>
 
         <activity
-            android:name="com.taylorcorp.lifepics.locations.PickupLocationsActivity"
-            android:screenOrientation="sensorPortrait"
-            android:launchMode="singleTop"/>
-
-        <activity
             android:name="com.taylorcorp.lifepics.contactinfo.ContactInfoActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop"/>
@@ -101,12 +136,99 @@ Installation
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop"/>
 
-7. Now, in your program logic, you'll want to connect to the LifePics network by providing your Partner ID, Source ID, and password. You can do this in the activity (or fragment) where you plan on presenting the LifePics print selector:
+		<activity android:name="com.soundcloud.android.crop.CropImageActivity" />
 
-        service.startSession("<YOUR PARTNER ID>", "<YOUR PASSWORD>", new LifePicsWebServiceResponse() {
+7. If you turn on Pickup Locations then you have to add the following activity to your AndroidManifest.xml file:
+
+			<activity
+            	android:name="com.taylorcorp.lifepics.locations.PickupLocationsActivity"
+            	android:screenOrientation="sensorPortrait"
+            	android:launchMode="singleTop"/>
+
+8.  If you turn on Ship To Home then you have to add the following activites to you AndroidManifest.xml file:
+
+		<activity
+            android:name="com.taylorcorp.lifepics.shipping.ShippingAndPaymentActivity"
+            android:screenOrientation="sensorPortrait"
+            android:launchMode="singleTop" />
+        <activity
+            android:name="com.taylorcorp.lifepics.shipping.AddShippingInfoActivity"
+            android:screenOrientation="sensorPortrait"
+            android:launchMode="singleTop" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taylorcorp.lifepics.shipping.ShippingAndPaymentActivity" />
+        </activity>
+        <activity
+            android:name="com.taylorcorp.lifepics.shipping.EditShippingInfoActivity"
+            android:screenOrientation="sensorPortrait"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name="com.taylorcorp.lifepics.shipping.ShippingAddressesActivity"
+            android:screenOrientation="sensorPortrait"
+            android:launchMode="singleTop" />
+
+        <activity
+            android:name="com.taylorcorp.lifepics.shipping.AddPaymentActivity"
+            android:screenOrientation="sensorPortrait"
+            android:launchMode="singleTop" >
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.taylorcorp.lifepics.shipping.ShippingAndPaymentActivity" />
+        </activity>
+
+        <activity
+            android:name="com.taylorcorp.lifepics.order.ShippingOrderCompletedActivity"
+            android:screenOrientation="sensorPortrait"
+            android:launchMode="singleTop" />
+
+6. The server endpoints are defined in the lp_settings.xml file.  They point to the staging (test) server.  When you are ready to deploy your app you must change these parameters to point to a live server.  These values can be provided by LifePics.
+
+		<string name="lp_endpoint">http://staging.api.lifepics.com/V4.1/api/</string>
+    	<string name="lp_endpoint_secure">https://staging.api.lifepics.com/V4.1/api/</string>
+
+7. Now, in your program logic, you'll need to set your developer key. You can do this in the activity (or fragment) where you plan on presenting the LifePics print selector:
+
+        String developerKey = getString(R.string.lp_developer_key);
+        if (developerKey != null) {
+            MainApplication.getAppPreferences().setDeveloperKey(developerKey);
+        }
+8. You can log your user into the LifePics server using the following code snippet:
+		
+		MainApplication.getLifePicsWebService().getUserID(MainApplication.getAppPreferences().getDeveloperKey(),
+                emailAddress, password, new LifePicsWebServiceResponse() {
+                    @Override
+                    public void resultHandler(boolean isSuccess, Object response, com.taylorcorp.lifepics.webservices.entities.Error error, String message) {
+                        if (isSuccess) {
+                            AccountInfo info = (AccountInfo) response;
+                    		MainApplication.setAccountInfo(info);
+                    		MainApplication.getAppPreferences().setUserID(info.getUserId());
+                        } else {
+                            if (MainApplication.isDebug()) {
+                                //log error
+                            }
+                        }
+                    }
+                });
+8. If your user does not log into the LifePics server you need to get a User ID by creating a temporary user.
+
+        MainApplication.getLifePicsWebService().createTemporaryUser(
+                MainApplication.getAppPreferences().getDeveloperKey(),
+                MainApplication.getAppPreferences().getMerchantID(), new LifePicsWebServiceResponse() {
             @Override
-		    public void resultHandler(boolean isSuccess, Object response, ErrorBE error, String message) {
-			    // if there's an error, you won't be able to connect
+            public void resultHandler(boolean isSuccess, Object response, com.taylorcorp.lifepics.webservices.entities.Error error, String message) {
+                if (isSuccess) {
+                    AccountInfo info = (AccountInfo) response;
+                    MainApplication.setAccountInfo(info);
+                    MainApplication.getAppPreferences().setUserID(info.getUserId());
+
+                } else {
+                    if (MainApplication.isDebug()) {
+                        //Log.e("LP", error.mMessage);
+                    }
+                }
             }
         });
 
@@ -147,4 +269,9 @@ New in Version 1.0.2
 * Added LifePics Image Support
 * Added Google Image Support
 * Added SmugMug Image Support
+
+New in Version 2.0.2
+--------------------
+
+* Added Ship To Home
 

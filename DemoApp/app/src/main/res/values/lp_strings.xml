@@ -23,14 +23,19 @@
     <string name="lp_photos_total">%1$d Total</string>
     <string name="lp_cart_continue_shopping">Continue Shopping</string>
     <string name="lp_cart_pick_up">I\'ll Pick Up My Prints</string>
+    <string name="lp_cart_deliver">Deliver My Prints</string>
     <string name="lp_cart_find_photofinishers">Find Photofinishers</string>
     <string name="lp_cart_empty_cart_title">No Photos</string>
     <string name="lp_cart_empty_cart_message">Please order some photos.</string>
     <string name="lp_cart_photo_prints_up">PHOTO PRINTS</string>
     <string name="lp_locations_number">%1$d LOCATIONS NEAR YOU</string>
     <string name="lp_locations_close_number">%1$d</string>
+    <string name="lp_delivery_price_number" formatted="false">$%.2f.%n</string>
+    <string name="lp_upload_failure">FAILED TO UPLOAD CART</string>
     <string name="lp_locations_close_by">Locations Close-by</string>
+    <string name="lp_plus_shipping">+ Shipping</string>
     <string name="lp_searching_for_locations">SEARCHING FOR LOCATIONS</string>
+    <string name="lp_assembling_cart">ASSEMBLING CART</string>
     <string name="lp_change_location">Change Location</string>
     <string name="lp_contact_information">Contact Information</string>
     <string name="lp_postal_code">Postal Code</string>
@@ -56,6 +61,7 @@
     <string name="lp_size_and_quantity">Size &amp; Quantity</string>
     <string name="lp_source">Source</string>
     <string name="lp_image_source">Image Source</string>
+    <string name="lp_review_and_edit">Review and Edit</string>
     <string name="lp_return_to_cart">Return to Cart</string>
     <string name="lp_price_plus_tax">$%1$s + tax</string>
     <string name="lp_order_submission">Order Submission</string>
@@ -66,7 +72,10 @@
     <string name="lp_email_invalid">Your email address is invalid.</string>
     <string name="lp_cart_plus_tax">(+ tax)</string>
     <string name="lp_order_is_in_message"><![CDATA[You can pick up your order at <b>%1$s</b>, located at <b>%2$s</b>.]]></string>
+    <string name="lp_order_is_in_message_shipping">We\'ll send you an email confirmation soon and you\'ll be receiving a shipping email when your order is shipped!</string>
     <string name="lp_done">Done</string>
+    <string name="lp_continue_shopping">Continue Shopping</string>
+    <string name="lp_reorder">Reorder to a New Address</string>
     <string name="lp_items_in_your_cart">%1$d items in your cart.</string>
     <string name="lp_item_in_your_cart">1 item in your cart.</string>
     <string name="lp_photo_prints">Photo Prints</string>
@@ -81,6 +90,7 @@
     <string name="lp_cart_item_description_single">%1$d Print Each - %2$.0f\" x %3$.0f\" %4$s</string>
     <string name="lp_cancel_are_you_sure_title">Cancel</string>
     <string name="lp_cancel_are_you_sure_message">Are you sure you\'d like to cancel this order?</string>
+    <string name="lp_cancel_edit_are_you_sure_message">Are you sure you\'d like to cancel?</string>
     <string name="lp_more_items">MORE</string>
     <string name="lp_finding_locations">Finding Locations...</string>
     <string name="lp_bad_zip_code_title">Bad Zip Code</string>
@@ -88,9 +98,11 @@
     <string name="lp_store_distance_from_user">%s away</string>
     <string name="lp_store_address_with_distance">$1s ($2s)</string>
     <string name="lp_name_and_password_required">Email and Password are required.</string>
+    <string name="lp_shipping_and_payment">Shipping \u0026 Payment</string>
     <string name="lp_photo_source_logout">Logout</string>
     <string name="lp_photo_source_log_out">Log Out</string>
     <string name="lp_photo_source_logout_confirm_title">Logout</string>
     <string name="lp_photo_source_logout_confirm_message">Are you sure you want to log out out of %1$s?</string>
     <string name="lp_terms_and_conditions"><![CDATA[By clicking Submit Order I agree to the<br><a href="https://photo.lifepics.com/Content.aspx?id=TermsAndConditions">Terms Of Service</a> and <a href="https://ww2.lifepics.com/Privacy-Policy.htm">Privacy Policy</a>. ]]></string>
+    <string name="lp_edit_field_error_title">Missing required field</string>
 </resources>

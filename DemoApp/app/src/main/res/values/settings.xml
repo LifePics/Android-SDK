@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- REQUIRED: provide your partner source id -->
-    <string name="lp_partner_source_id">11</string>
+    <!-- endpoint -->
+    <bool name="lp_debug">false</bool>
+
+    <bool name="lp_find_stores">true</bool>
+    <bool name="lp_ship_to_home">true</bool>
+
+    <string name="lp_partner_id"></string>
+    <string name="lp_password"></string>
+
+    <string name="lp_partner_source_id"></string>
+    <string name="lp_merchant_id"></string>
 
     <!-- allow testing for fake order (no final submission executed) for test modes -->
     <bool name="lp_offer_choice_for_test_orders">false</bool>
 
     <!-- set this to true and provide your merchant id if necessary -->
     <bool name="lp_is_app_private_label">false</bool>
-    <string name="lp_merchant_id">Lifepics</string>
 
     <!-- set this to true and provide your merchant group key if necessary -->
     <bool name="lp_is_app_merchant_group">false</bool>
     <string name="lp_merchant_group_key"></string>
+
 </resources>

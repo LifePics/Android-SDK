@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="lp_instagram_key">8e1e619e6dae4ba3bb1781fdfcf26482</string>
-    <string name="lp_facebook_app_id">783905314972408</string>
-    <string name="lp_flickr_key">f246b0ea9464f26ce1b8681a93d510a5</string>
-    <string name="lp_flickr_secret">5de4361b2d86fbb2</string>
-    <string name="lp_google_key">AIzaSyAyxEiKE_SGjJSMKl9ShkagaIEYx5Q121c</string>
-    <string name="lp_smugmug_key">Gn0jDPWDeWPHWtU3aZSj5MkYrw73Vd4h</string>
+    <string name="lp_developer_key"></string>
+    <string name="lp_instagram_key"></string>
+    <string name="lp_facebook_app_id"></string>
+    <string name="lp_flickr_key"></string>
+    <string name="lp_flickr_secret"></string>
+    <string name="lp_google_key"></string>
+    <string name="lp_smugmug_key"></string>
+
+    <string name="lp_stripe_publishable_key"></string>
 </resources>

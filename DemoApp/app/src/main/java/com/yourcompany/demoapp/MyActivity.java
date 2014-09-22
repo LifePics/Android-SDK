@@ -6,15 +6,14 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
 
+import com.taylorcorp.lifepics.MainApplication;
 import com.taylorcorp.lifepics.listeners.OrderStatusListener;
 import com.taylorcorp.lifepics.model.purchases.Cart;
-import com.taylorcorp.lifepics.model.purchases.ContactInfo;
 import com.taylorcorp.lifepics.model.purchases.ShoppingCart;
-import com.taylorcorp.lifepics.order.OrderActivity;
 import com.taylorcorp.lifepics.products.ProductsActivity;
 import com.taylorcorp.lifepics.utils.AlertUtils;
-import com.taylorcorp.lifepics.webservices.LifePicsWebService;
 import com.taylorcorp.lifepics.webservices.LifePicsWebServiceResponse;
+import com.taylorcorp.lifepics.webservices.data.AccountInfo;
 
 public class MyActivity extends ActionBarActivity implements OrderStatusListener {
     private String TAG = "MyActivity";
@@ -23,8 +22,6 @@ public class MyActivity extends ActionBarActivity implements OrderStatusListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
-
-        final LifePicsWebService service = new LifePicsWebService(this);
 
         String partnerId = null;
         String password = null;
@@ -37,10 +34,28 @@ public class MyActivity extends ActionBarActivity implements OrderStatusListener
         // listen in
         ShoppingCart.getInstance().setOrderStatusListener(this);
 
-        service.startSession(partnerId, password, developerId, new LifePicsWebServiceResponse() {
-            @Override
-            public void resultHandler(boolean b, Object o, com.taylorcorp.lifepics.webservices.entities.Error error, String s) {
+        String developerKey = getString(R.string.lp_developer_key);
+        if (developerKey != null) {
+            MainApplication.getAppPreferences().setDeveloperKey(developerKey);
+        }
 
+        MainApplication.getLifePicsWebService().createTemporaryUser(
+                MainApplication.getAppPreferences().getDeveloperKey(),
+                MainApplication.getAppPreferences().getMerchantID(), new LifePicsWebServiceResponse() {
+            @Override
+            public void resultHandler(boolean isSuccess, Object response, com.taylorcorp.lifepics.webservices.entities.Error error, String message) {
+                if (isSuccess) {
+                    AccountInfo info = (AccountInfo) response;
+                    MainApplication.setAccountInfo(info);
+                    MainApplication.getAppPreferences().setUserID(info.getUserId());
+
+                    Log.d("LP", "User ID set to " + MainApplication.getAppPreferences().getUserID());
+
+                } else {
+                    if (MainApplication.isDebug()) {
+                        //Log.e("LP", error.mMessage);
+                    }
+                }
             }
         });
     }
@@ -53,7 +68,7 @@ public class MyActivity extends ActionBarActivity implements OrderStatusListener
     }
 
     @Override
-    public void didSubmitOrder(Cart cart, ContactInfo orderInfo) {
+    public void didSubmitOrder(Cart cart) {
         Log.d(TAG, "Order was submitted with cart item count: " + cart.getCartItems().size());
     }
 

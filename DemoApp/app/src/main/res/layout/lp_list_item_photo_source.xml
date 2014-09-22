@@ -2,8 +2,7 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:descendantFocusability="blocksDescendants">
+                android:layout_height="match_parent">
 
     <ImageView
         android:id="@+id/lp_img_icon"
@@ -12,7 +11,7 @@
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:layout_margin="8dp"
-        android:scaleType="centerInside"/>
+        android:scaleType="centerInside" />
 
     <TextView
         android:id="@+id/lp_txt_title"
@@ -21,7 +20,7 @@
         android:layout_toRightOf="@id/lp_img_icon"
         android:layout_toLeftOf="@+id/lp_txt_logout"
         android:layout_centerVertical="true"
-        style="@style/lp_photo_source_title"/>
+        style="@style/lp_photo_source_title" />
 
     <TextView
         android:id="@id/lp_txt_logout"
@@ -33,5 +32,4 @@
         android:clickable="true"
         android:layout_marginRight="@dimen/lp_activity_horizontal_margin"
         style="@style/lp_photo_source_logout"/>
-
 </RelativeLayout>

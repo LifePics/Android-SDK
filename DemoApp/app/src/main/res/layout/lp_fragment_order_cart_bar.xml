@@ -34,6 +34,7 @@
                 android:layout_toRightOf="@id/lp_back_arrow"
                 android:background="@android:color/white"
                 android:text="Image Source"
+                android:maxLines="2"
                 style="@style/lp_intro_primary_color_text"/>
         </RelativeLayout>
 

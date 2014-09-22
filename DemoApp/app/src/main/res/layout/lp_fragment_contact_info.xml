@@ -141,13 +141,13 @@
 
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/lp_txt_order_info"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/lp_component_vertical_margin"
-                    android:gravity="center"
-                    android:text="text"/>
+                <!--<TextView-->
+                    <!--android:id="@+id/lp_txt_order_info"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginBottom="@dimen/lp_component_vertical_margin"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="text"/>-->
 
                 <Button
                     android:id="@+id/lp_btn_submit"
@@ -162,14 +162,14 @@
                     android:textStyle="bold"
                     android:textColor="@color/lp_white_color"/>
 
-                <!--<TextView-->
-                    <!--android:id="@+id/lp_terms"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:gravity="center_horizontal"-->
-                    <!--android:layout_gravity="center_horizontal"-->
-                    <!--android:text="@string/lp_terms_and_conditions"-->
-                    <!--android:layout_margin="10dp"/>-->
+                <TextView
+                    android:id="@+id/lp_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/lp_terms_and_conditions"
+                    android:layout_margin="10dp"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

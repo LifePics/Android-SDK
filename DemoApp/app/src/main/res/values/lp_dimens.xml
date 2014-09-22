@@ -18,6 +18,13 @@
     <dimen name="lp_image_check_mark_size">20dp</dimen>
 
     <dimen name="lp_contact_info_btn_txt_size">20sp</dimen>
+    <dimen name="lp_shipping_item_txt_size">18sp</dimen>
+    <dimen name="lp_shipping_item_address_txt_size">18sp</dimen>
+
+    <dimen name="lp_shipping_item_type_txt_size">20sp</dimen>
+    <dimen name="lp_shipping_options_txt_size">20sp</dimen>
+    <dimen name="lp_shipping_details_txt_size">18sp</dimen>
+    <dimen name="lp_shipping_price_txt_size">20sp</dimen>
 
     <dimen name="lp_progress_bar_size">64dp</dimen>
 </resources>
