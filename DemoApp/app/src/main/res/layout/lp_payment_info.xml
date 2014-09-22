@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lp_white_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp">
+
+        <ImageView
+            android:id="@+id/lp_card_icon"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:gravity="center_vertical"
+            android:src="@drawable/lp_ic_credit_cards" />
+
+        <TextView
+            android:id="@+id/lp_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/lp_transparent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            android:text="Name"
+            android:textColor="@color/lp_primary_tint_color"
+            android:textSize="@dimen/lp_shipping_item_txt_size" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lp_card_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/lp_transparent"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:text="****5555 | EXP 11/11"
+        android:textColor="@color/lp_black_color"
+        android:textSize="@dimen/lp_shipping_item_address_txt_size"/>
+
+</LinearLayout>

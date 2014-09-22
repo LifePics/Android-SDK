@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@color/lp_white_color">
+
+    <TextView
+        android:id="@+id/lp_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:gravity="center_vertical"
+        android:textColor="@color/lp_primary_tint_color"
+        android:background="@color/lp_transparent"
+        android:textSize="@dimen/lp_shipping_item_txt_size" />
+
+    <TextView
+        android:id="@+id/lp_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="address"
+        android:gravity="center_vertical"
+        android:textColor="@color/lp_black_color"
+        android:background="@color/lp_transparent"
+        android:textSize="@dimen/lp_shipping_item_address_txt_size" />
+
+    <TextView
+        android:id="@+id/lp_address2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="address2"
+        android:gravity="center_vertical"
+        android:textColor="@color/lp_black_color"
+        android:background="@color/lp_transparent"
+        android:textSize="@dimen/lp_shipping_item_address_txt_size" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lp_shipping_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ground Shipping"
+            android:layout_centerVertical="true"
+            android:textColor="@color/lp_black_color"
+            android:background="@color/lp_transparent"
+            android:textStyle="bold"
+            android:textSize="@dimen/lp_shipping_item_type_txt_size" />
+
+        <TextView
+            android:id="@+id/lp_shipping_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0.00"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/lp_secondary_tint_color"
+            android:background="@color/lp_transparent"
+            android:textStyle="bold"
+            android:textSize="@dimen/lp_shipping_item_type_txt_size" />
+
+    </RelativeLayout>
+
+</LinearLayout>

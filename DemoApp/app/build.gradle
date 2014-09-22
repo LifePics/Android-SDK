@@ -28,5 +28,6 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:19.+'
     compile 'com.google.android.gms:play-services:5.0.+'
+    compile 'com.soundcloud.android:android-crop:+@aar'
     compile project(':facebook')
 }

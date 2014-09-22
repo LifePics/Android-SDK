@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lp_white_color">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Add Payment Info"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/lp_primary_tint_color"
+        android:background="@color/lp_transparent"
+        android:textSize="@dimen/lp_shipping_item_txt_size"/>
+
+</LinearLayout>

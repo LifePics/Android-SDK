@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/lp_white_color">
+
+    <LinearLayout
+        android:id="@+id/lp_address_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/lp_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/lp_transparent"
+            android:gravity="center_vertical"
+            android:text="Name"
+            android:textColor="@color/lp_primary_tint_color"
+            android:textSize="@dimen/lp_shipping_item_txt_size" />
+
+        <TextView
+            android:id="@+id/lp_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/lp_transparent"
+            android:gravity="center_vertical"
+            android:text="address"
+            android:textColor="@color/lp_black_color"
+            android:textSize="@dimen/lp_shipping_item_address_txt_size" />
+
+        <TextView
+            android:id="@+id/lp_address2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/lp_transparent"
+            android:gravity="center_vertical"
+            android:text="address2"
+            android:textColor="@color/lp_black_color"
+            android:textSize="@dimen/lp_shipping_item_address_txt_size" />
+
+    </LinearLayout>
+</RelativeLayout>
