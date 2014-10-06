@@ -2,12 +2,13 @@
 <resources>
     <string name="lp_lifepics_version">2.0.1beta</string>
 
-    <string name="lp_store_search_radius">5</string>
     <bool name="lp_is_metric">false</bool>
 
     <!-- endpoint -->
     <string name="lp_endpoint">http://staging.api.lifepics.com/V4.1/api/</string>
     <string name="lp_endpoint_secure">https://staging.api.lifepics.com/V4.1/api/</string>
+    <!--<string name="lp_endpoint">http://api.lifepics.com/V4.1/api/</string>-->
+    <!--<string name="lp_endpoint_secure">https://api.lifepics.com/V4.1/api/</string>-->
     <string name="lp_endpoint_35">http://api.lifepics.com/V3/lpwebservice.asmx/</string>
     <string name="lp_soap_action">https://api.lifepics.com/v3</string>
     <string name="lp_amazonws_submit">http://ec2-54-201-100-92.us-west-2.compute.amazonaws.com/lifepics/submit_charge.php</string>

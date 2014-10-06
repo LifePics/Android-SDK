@@ -19,6 +19,7 @@ It's advised that you place all your string resources for these image sources in
 ### Instagram
 
 1. Create a new client on [Instagram](http://instagram.com/developer/clients/manage/).
+2. Set the redirect URL to **ig[Your Instagram Client ID]://authorize**.
 2. Add a string resource for the key *lp_instagram_key* and set it to your provided *Instagram Client ID*.
 
 

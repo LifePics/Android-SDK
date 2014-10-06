@@ -42,17 +42,6 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/lp_shipping_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ground Shipping"
-            android:layout_centerVertical="true"
-            android:textColor="@color/lp_black_color"
-            android:background="@color/lp_transparent"
-            android:textStyle="bold"
-            android:textSize="@dimen/lp_shipping_item_type_txt_size" />
-
-        <TextView
             android:id="@+id/lp_shipping_price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,6 +51,18 @@
             android:textColor="@color/lp_secondary_tint_color"
             android:background="@color/lp_transparent"
             android:textStyle="bold"
+            android:textSize="@dimen/lp_shipping_item_type_txt_size" />
+
+        <TextView
+            android:id="@+id/lp_shipping_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ground Shipping"
+            android:layout_centerVertical="true"
+            android:textColor="@color/lp_black_color"
+            android:background="@color/lp_transparent"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/lp_shipping_price"
             android:textSize="@dimen/lp_shipping_item_type_txt_size" />
 
     </RelativeLayout>

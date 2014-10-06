@@ -8,8 +8,8 @@ import android.view.View;
 
 import com.taylorcorp.lifepics.MainApplication;
 import com.taylorcorp.lifepics.listeners.OrderStatusListener;
+import com.taylorcorp.lifepics.lp.LifePicsResponse;
 import com.taylorcorp.lifepics.model.purchases.Cart;
-import com.taylorcorp.lifepics.model.purchases.ShoppingCart;
 import com.taylorcorp.lifepics.products.ProductsActivity;
 import com.taylorcorp.lifepics.utils.AlertUtils;
 import com.taylorcorp.lifepics.webservices.LifePicsWebServiceResponse;
@@ -32,36 +32,71 @@ public class MyActivity extends ActionBarActivity implements OrderStatusListener
         }
 
         // listen in
-        ShoppingCart.getInstance().setOrderStatusListener(this);
+        MainApplication.getShoppingCart().setOrderStatusListener(this);
+        String userID = MainApplication.getAppPreferences().getUserID();
 
-        String developerKey = getString(R.string.lp_developer_key);
-        if (developerKey != null) {
-            MainApplication.getAppPreferences().setDeveloperKey(developerKey);
+        if (userID == null || userID.isEmpty()) {
+            MainApplication.getLifePicsWebService().createTemporaryUser(
+                    MainApplication.getAppPreferences().getDeveloperKey(),
+                    MainApplication.getAppPreferences().getMerchantID(), new LifePicsWebServiceResponse() {
+                        @Override
+                        public void resultHandler(boolean isSuccess, Object response, com.taylorcorp.lifepics.webservices.entities.Error error, String message) {
+                            if (isSuccess) {
+                                AccountInfo info = (AccountInfo) response;
+                                MainApplication.setAccountInfo(info);
+                                MainApplication.getAppPreferences().setUserID(info.getUserId());
+                            } else {
+                                if (MainApplication.isDebug()) {
+                                    //Log.e("LP", error.mMessage);
+                                }
+                            }
+
+                            if (MainApplication.getAppPreferences().getMerchantID() != null &&
+                                    !MainApplication.getAppPreferences().getMerchantID().isEmpty())
+
+                                populateProducts();
+
+                            MainApplication.loadCart(MainApplication.getAppPreferences().getUserID(),
+                                    new LifePicsResponse() {
+                                        @Override
+                                        public void didComplete(Object response, Exception ex) {
+
+                                        }
+                                    });
+                        }
+
+                    });
+        } else {
+            if (MainApplication.getAppPreferences().getMerchantID() != null &&
+                    !MainApplication.getAppPreferences().getMerchantID().isEmpty()) {
+                populateProducts();
+
+                MainApplication.loadCart(MainApplication.getAppPreferences().getUserID(),
+                        new LifePicsResponse() {
+                            @Override
+                            public void didComplete(Object response, Exception ex) {
+
+                            }
+                        });
+            }
         }
 
-        MainApplication.getLifePicsWebService().createTemporaryUser(
-                MainApplication.getAppPreferences().getDeveloperKey(),
-                MainApplication.getAppPreferences().getMerchantID(), new LifePicsWebServiceResponse() {
+
+        if (MainApplication.isDebug())
+            Log.d("LP", "User id = " + MainApplication.getAppPreferences().getUserID());
+    }
+
+    private void populateProducts() {
+        MainApplication.loadProducts(MainApplication.getMerchantID(), 1, new LifePicsResponse() {
             @Override
-            public void resultHandler(boolean isSuccess, Object response, com.taylorcorp.lifepics.webservices.entities.Error error, String message) {
-                if (isSuccess) {
-                    AccountInfo info = (AccountInfo) response;
-                    MainApplication.setAccountInfo(info);
-                    MainApplication.getAppPreferences().setUserID(info.getUserId());
+            public void didComplete(Object response, Exception ex) {
 
-                    Log.d("LP", "User ID set to " + MainApplication.getAppPreferences().getUserID());
-
-                } else {
-                    if (MainApplication.isDebug()) {
-                        //Log.e("LP", error.mMessage);
-                    }
-                }
             }
         });
     }
 
     public void didClick(View v) {
-        ShoppingCart.getInstance().clear();
+        MainApplication.getShoppingCart().clear();
 
         Intent i = new Intent(this, ProductsActivity.class);
         startActivity(i);

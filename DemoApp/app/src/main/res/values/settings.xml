@@ -22,4 +22,7 @@
     <bool name="lp_is_app_merchant_group">false</bool>
     <string name="lp_merchant_group_key"></string>
 
+    <string name="lp_store_search_radius">10</string>
+    <string name="lp_returned_store_number">20</string>
+
 </resources>

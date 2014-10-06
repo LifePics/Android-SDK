@@ -39,7 +39,6 @@ Installation
 
 1. Copy the following from Android Files/ into your libs/ folder:
 
-        ksoap2-android-assembly-2.3-jar-with-dependencies.jar
         LifePicsSDK.jar
 		stripe-java-1.15.1
 		gson-2.2.4
