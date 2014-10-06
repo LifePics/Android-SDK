@@ -1,35 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="64dp">
 
-    <ImageView
-        android:id="@+id/lp_img_icon"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:layout_margin="8dp"
-        android:scaleType="centerInside" />
-
-    <TextView
-        android:id="@+id/lp_txt_title"
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/lp_list_item"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/lp_img_icon"
-        android:layout_toLeftOf="@+id/lp_txt_logout"
-        android:layout_centerVertical="true"
-        style="@style/lp_photo_source_title" />
+        android:layout_toLeftOf="@+id/lp_txt_logout">
 
-    <TextView
+        <ImageView
+            android:id="@+id/lp_img_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="8dp"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/lp_txt_title"
+            style="@style/lp_photo_source_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/lp_img_icon" />
+    </RelativeLayout>
+
+    <Button
         android:id="@id/lp_txt_logout"
+        style="@style/lp_photo_source_logout"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/lp_transparent"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
-        android:text="@string/lp_photo_source_logout"
         android:clickable="true"
-        android:layout_marginRight="@dimen/lp_activity_horizontal_margin"
-        style="@style/lp_photo_source_logout"/>
+        android:gravity="center_vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="@dimen/lp_activity_horizontal_margin"
+        android:text="@string/lp_photo_source_logout" />
 </RelativeLayout>

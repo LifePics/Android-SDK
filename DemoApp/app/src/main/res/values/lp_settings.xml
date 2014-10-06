@@ -2,6 +2,7 @@
 <resources>
     <string name="lp_lifepics_version">2.0.1beta</string>
 
+    <string name="lp_store_search_radius">5</string>
     <bool name="lp_is_metric">false</bool>
 
     <!-- endpoint -->

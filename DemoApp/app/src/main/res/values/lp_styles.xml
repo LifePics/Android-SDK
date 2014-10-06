@@ -19,7 +19,7 @@
 
     <!-- common -->
     <style name="lp_standard_background">
-        <item name="android:background">@drawable/lp_dv716064</item>
+        <item name="android:background">#ffffff</item>
     </style>
 
     <style name="lp_small_text">
@@ -153,6 +153,12 @@
 
     <style parent="@style/Widget.AppCompat.Light.ActionBar.TabView" name="ActionBarTabStyle.Lp">
         <item name="android:background">@drawable/lp_tab_indicator</item>
+    </style>
+
+    <style name="lp_action_bar" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="background">@color/lp_primary_tint_color</item>
+        <item name="android:background">@drawable/lp_ab_background</item>
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
 </resources>
