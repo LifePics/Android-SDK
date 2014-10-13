@@ -64,8 +64,9 @@
                 android:text="(555)555-5555"
                 android:background="@color/lp_transparent"
                 android:textColor="@color/lp_primary_tint_color"
+                android:layout_gravity="end"
                 android:textSize="16dp"
-                android:gravity="left|center_vertical"/>
+                android:gravity="right|center_vertical"/>
         </LinearLayout>
     </LinearLayout>
 

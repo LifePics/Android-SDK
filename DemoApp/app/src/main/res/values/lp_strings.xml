@@ -2,7 +2,7 @@
 <resources>
 
     <!-- manifest -->
-    <string name="lp_title_intro">LifePics SDK</string>
+
     <string name="lp_order_is_in">Excellent!  Your Order Is In!</string>
 
     <!-- strings -->
