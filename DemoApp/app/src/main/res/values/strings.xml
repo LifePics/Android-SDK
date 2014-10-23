@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lp_intro_order_prints">Order Prints</string>
+    <string name="lp_intro_add_images_title">Test Photos</string>
+    <string name="lp_intro_add_images_message">There are no photos in the simulator. Shall we fetch some in the background?\n\n (Watch the console for progress.)</string>
+
+
+</resources>

@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lp_white_color"
+    android:orientation="vertical">
+
+    <com.amazon.geo.maps.MapView
+        android:id="@+id/lp_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:enabled="true"
+        android:clickable="true"
+        />
+
+</LinearLayout>

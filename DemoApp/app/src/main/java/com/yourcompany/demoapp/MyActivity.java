@@ -2,6 +2,8 @@ package com.yourcompany.demoapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.View;
@@ -17,6 +19,19 @@ import com.taylorcorp.lifepics.webservices.data.AccountInfo;
 
 public class MyActivity extends ActionBarActivity implements OrderStatusListener {
     private String TAG = "MyActivity";
+
+
+    private void configureView() {
+        FragmentManager fm = getSupportFragmentManager();
+
+        if (fm.findFragmentById(R.id.lp_layout_fragment) == null) {
+            Fragment f = MyFragment.createFragment();
+
+            if (f != null) {
+                fm.beginTransaction().add(R.id.lp_layout_fragment, f).commit();
+            }
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

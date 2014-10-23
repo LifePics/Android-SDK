@@ -40,17 +40,13 @@
         <activity android:name="com.taylorcorp.lifepics.order.OrderActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.taylorcorp.lifepics.app.activities.IntroActivity" />
+
         </activity>
 
         <activity android:name="com.taylorcorp.lifepics.cart.CartActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.taylorcorp.lifepics.order.OrderActivity" />
+
         </activity>
 
         <activity
@@ -76,9 +72,7 @@
             android:name="com.taylorcorp.lifepics.shipping.AddShippingInfoActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.taylorcorp.lifepics.shipping.ShippingAndPaymentActivity" />
+
         </activity>
         <activity
             android:name="com.taylorcorp.lifepics.shipping.EditShippingInfoActivity"
@@ -89,15 +83,10 @@
             android:name="com.taylorcorp.lifepics.shipping.ShippingAddressesActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop" />
-
         <activity
             android:name="com.taylorcorp.lifepics.shipping.AddPaymentActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop">
-
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.taylorcorp.lifepics.shipping.ShippingAndPaymentActivity" />
         </activity>
 
         <activity

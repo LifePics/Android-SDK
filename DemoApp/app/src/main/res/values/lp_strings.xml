@@ -5,6 +5,8 @@
 
     <string name="lp_order_is_in">Excellent!  Your Order Is In!</string>
 
+    <string name="lp_products_button_label"></string>
+
     <!-- strings -->
     <string name="lp_add_to_cart">Add to Cart</string>
     <string name="lp_remove_from_cart">Remove from Cart</string>
@@ -31,7 +33,7 @@
     <string name="lp_locations_number">%1$d LOCATIONS NEAR YOU</string>
     <string name="lp_locations_close_number">%1$d</string>
     <string name="lp_delivery_price_number" formatted="false">$%.2f.%n</string>
-    <string name="lp_upload_failure">FAILED TO UPLOAD CART</string>
+    <string name="lp_upload_failure">Failed to build cart.</string>
     <string name="lp_locations_close_by">Locations Close-by</string>
     <string name="lp_plus_shipping">+ Shipping</string>
     <string name="lp_searching_for_locations">SEARCHING FOR LOCATIONS</string>
