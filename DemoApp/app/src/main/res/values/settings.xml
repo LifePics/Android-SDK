@@ -24,4 +24,9 @@
 
     <string name="lp_returned_store_number">20</string>
 
+    <string name="lp_endpoint">http://staging.api.lifepics.com/V4.1/api/</string>
+    <string name="lp_endpoint_secure">https://staging.api.lifepics.com/V4.1/api/</string>
+    <string name="lp_amazonws_submit">http://ec2-54-69-180-153.us-west-2.compute.amazonaws.com/lifepics/submit_charge.php</string>
+    <string name="lp_amazonws_capture">http://ec2-54-69-180-153.us-west-2.compute.amazonaws.com/lifepics/capture_charge.php</string>
+
 </resources>

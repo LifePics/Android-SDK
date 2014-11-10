@@ -33,7 +33,7 @@
     <string name="lp_locations_number">%1$d LOCATIONS NEAR YOU</string>
     <string name="lp_locations_close_number">%1$d</string>
     <string name="lp_delivery_price_number" formatted="false">$%.2f.%n</string>
-    <string name="lp_upload_failure">Failed to build cart.</string>
+    <string name="lp_upload_failure">$0.00</string>
     <string name="lp_locations_close_by">Locations Close-by</string>
     <string name="lp_plus_shipping">+ Shipping</string>
     <string name="lp_searching_for_locations">SEARCHING FOR LOCATIONS</string>

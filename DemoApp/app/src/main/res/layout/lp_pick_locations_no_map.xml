@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lp_white_color"
+    android:orientation="vertical">
+
+    <fragment
+        android:id="@+id/pick_locations"
+        android:name="com.taylorcorp.lifepics.locations.PickupLocationsListFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" />
+
+    <fragment
+        android:id="@+id/chage_locations"
+        android:name="com.taylorcorp.lifepics.locations.ChangeLocationFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true" />
+
+</LinearLayout>

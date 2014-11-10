@@ -5,6 +5,11 @@
     <string name="lp_store_search_radius">5</string>
     <bool name="lp_is_metric">false</bool>
 
+    <!--<string-array name="lp_banned_stores">-->
+        <!--<item>5870</item>-->
+    <!--</string-array>-->
+
+
     <!-- endpoint -->
     <!--<string name="lp_endpoint">http://staging.api.lifepics.com/V4.1/api/</string>-->
     <!--<string name="lp_endpoint_secure">https://staging.api.lifepics.com/V4.1/api/</string>-->
