@@ -20,6 +20,8 @@
 
     <color name="lp_semi_transparent">#a7ffffff</color>
 
+    <color name="lp_dark_semi_transparent">#e7ffffff</color>
+
     <color name="lp_grey">#c8c8c8</color>
 
     <color name="lp_light_grey">#d8d8d8</color>

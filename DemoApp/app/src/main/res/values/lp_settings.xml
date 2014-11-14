@@ -5,6 +5,8 @@
     <string name="lp_store_search_radius">5</string>
     <bool name="lp_is_metric">false</bool>
 
+    <bool name="lp_show_discount">true</bool>
+
     <!--<string-array name="lp_banned_stores">-->
         <!--<item>5870</item>-->
     <!--</string-array>-->

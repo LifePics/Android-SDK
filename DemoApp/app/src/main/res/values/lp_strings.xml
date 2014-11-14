@@ -40,10 +40,14 @@
     <string name="lp_assembling_cart">ASSEMBLING CART</string>
     <string name="lp_change_location">Change Location</string>
     <string name="lp_contact_information">Contact Information</string>
+    <string name="lp_discount_code">Discount Code</string>
+    <string name="lp_preferred_cust_code">Preferred Customer Code</string>
     <string name="lp_postal_code">Postal Code</string>
     <string name="lp_first_name_hint">First Name</string>
     <string name="lp_last_name_hint">Last Name</string>
     <string name="lp_phone_number_hint">Phone Number</string>
+    <string name="lp_discount_code_hint">Discount Code</string>
+    <string name="lp_preferred_customer_hint">Preferred Customer Number</string>
     <string name="lp_email_hint">Email</string>
     <string name="lp_submit_order">Submit Order</string>
     <string name="lp_ordering_live_motd"></string>
@@ -88,8 +92,8 @@
     <string name="lp_directions">Directions</string>
     <string name="lp_real_or_fake_order">Would you like to submit a real order, or just fake it?</string>
     <string name="lp_select">Select</string>
-    <string name="lp_cart_item_description">%1$d Prints Each - %2$.0f\" x %3$.0f\" %4$s</string>
-    <string name="lp_cart_item_description_single">%1$d Print Each - %2$.0f\" x %3$.0f\" %4$s</string>
+    <string name="lp_cart_item_description">%1$d Prints Each - %2$s\" x %3$s\" %4$s</string>
+    <string name="lp_cart_item_description_single">%1$d Print Each - %2$s\" x %3$s\" %4$s</string>
     <string name="lp_cancel_are_you_sure_title">Cancel</string>
     <string name="lp_cancel_are_you_sure_message">Are you sure you\'d like to cancel this order?</string>
     <string name="lp_cancel_edit_are_you_sure_message">Are you sure you\'d like to cancel?</string>
