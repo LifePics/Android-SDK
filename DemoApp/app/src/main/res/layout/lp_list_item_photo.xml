@@ -9,5 +9,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
-        android:layout_margin="10dp"/>
+        android:layout_margin="10dp"
+        android:background="@color/lp_grey"/>
+
+    <ProgressBar
+        android:id="@+id/lp_progress_bar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerInParent="true"/>
+
 </RelativeLayout>
