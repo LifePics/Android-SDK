@@ -1,345 +1,349 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/lp_white_color">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:background="@color/lp_grey"
-        android:text="SHIPPING ADDRESS"
-        android:gravity="center_vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="0dp"
-        android:textColor="@color/lp_secondary_tint_color"/>
+    android:layout_height="wrap_content">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:orientation="horizontal"
-        android:background="@color/lp_white_color">
+        android:layout_height="wrap_content"
+        android:background="@color/lp_white_color"
+        android:orientation="vertical">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="FIRST NAME"
-            android:textColor="@color/lp_primary_tint_color"
-            android:gravity="center_vertical"
-            android:paddingLeft="16dp"
-            android:paddingRight="0dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="LAST NAME"
-            android:textColor="@color/lp_primary_tint_color"
-            android:gravity="center_vertical"
-            android:paddingLeft="16dp"
-            android:paddingRight="0dp" />
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/lp_primary_tint_color"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal"
-        android:background="@color/lp_white_color">
-
-        <EditText
-            android:id="@+id/lp_first_name"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:hint="tap to add"
-            android:textColor="@color/lp_black_color"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lp_grey"
             android:gravity="center_vertical"
             android:paddingLeft="16dp"
             android:paddingRight="0dp"
-            android:background="@color/lp_transparent"
-            android:imeOptions="actionNext"
-            android:singleLine="true"/>
+            android:text="SHIPPING ADDRESS"
+            android:textColor="@color/lp_secondary_tint_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/lp_white_color"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="0dp"
+                android:text="FIRST NAME"
+                android:textColor="@color/lp_primary_tint_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="0dp"
+                android:text="LAST NAME"
+                android:textColor="@color/lp_primary_tint_color" />
+
+        </LinearLayout>
 
         <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/lp_grey"/>
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/lp_primary_tint_color" />
 
-        <EditText
-            android:id="@+id/lp_last_name"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:hint="tap to add"
-            android:textColor="@color/lp_black_color"
-            android:gravity="center_vertical"
-            android:paddingLeft="16dp"
-            android:paddingRight="0dp"
-            android:background="@color/lp_transparent"
-            android:imeOptions="actionNext"
-            android:singleLine="true"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lp_white_color"
+            android:orientation="horizontal">
 
-    </LinearLayout>
+            <EditText
+                android:id="@+id/lp_first_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/lp_transparent"
+                android:gravity="center_vertical"
+                android:hint="tap to add"
+                android:imeOptions="actionNext"
+                android:paddingLeft="16dp"
+                android:paddingRight="0dp"
+                android:singleLine="true"
+                android:textColor="@color/lp_black_color" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/lp_grey" />
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/lp_grey" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:background="@color/lp_white_color"
-        android:text="ADDRESS LINE 1"
-        android:gravity="center_vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="0dp"
-        android:textColor="@color/lp_primary_tint_color" />
+            <EditText
+                android:id="@+id/lp_last_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/lp_transparent"
+                android:gravity="center_vertical"
+                android:hint="tap to add"
+                android:imeOptions="actionNext"
+                android:paddingLeft="16dp"
+                android:paddingRight="0dp"
+                android:singleLine="true"
+                android:textColor="@color/lp_black_color" />
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/lp_primary_tint_color" />
-
-    <EditText
-        android:id="@+id/lp_address"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:hint="tap to add"
-        android:background="@color/lp_transparent"
-        android:textColor="@color/lp_black_color"
-        android:gravity="center_vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="0dp"
-        android:inputType="textPostalAddress"
-        android:imeOptions="actionNext"
-        android:singleLine="true"/>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/lp_grey" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:background="@color/lp_white_color"
-        android:text="ADDRESS LINE 2 / APARTMENT #"
-        android:gravity="center_vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="0dp"
-        android:textColor="@color/lp_primary_tint_color" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/lp_primary_tint_color" />
-
-    <EditText
-        android:id="@+id/lp_address2"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:hint="tap to add"
-        android:background="@color/lp_transparent"
-        android:textColor="@color/lp_black_color"
-        android:gravity="center_vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="0dp"
-        android:inputType="textPostalAddress"
-        android:imeOptions="actionNext"
-        android:singleLine="true"/>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/lp_grey" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:orientation="horizontal"
-        android:background="@color/lp_white_color">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:text="CITY"
-            android:textColor="@color/lp_primary_tint_color"
-            android:gravity="center_vertical"
-            android:paddingLeft="16dp"
-            android:paddingRight="0dp" />
-
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="STATE"
-            android:textColor="@color/lp_primary_tint_color"
-            android:gravity="center_vertical"
-            android:paddingLeft="16dp"
-            android:paddingRight="0dp" />
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="ZIP"
-            android:textColor="@color/lp_primary_tint_color"
-            android:gravity="center_vertical"
-            android:paddingLeft="16dp"
-            android:paddingRight="0dp" />
-
-    </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/lp_primary_tint_color" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal"
-        android:background="@color/lp_white_color">
-
-        <EditText
-            android:id="@+id/lp_city"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="3"
-            android:hint="tap to add"
-            android:textColor="@color/lp_black_color"
-            android:gravity="center_vertical"
-            android:paddingLeft="16dp"
-            android:paddingRight="0dp"
-            android:background="@color/lp_transparent"
-            android:imeOptions="actionNext"
-            android:singleLine="true"/>
+        </LinearLayout>
 
         <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
             android:background="@color/lp_grey" />
 
-        <EditText
-            android:id="@+id/lp_state"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:hint="ST"
-            android:textColor="@color/lp_black_color"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/lp_white_color"
             android:gravity="center_vertical"
             android:paddingLeft="16dp"
             android:paddingRight="0dp"
-            android:inputType="textCapCharacters"
-            android:maxLength="2"
-            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-            android:background="@color/lp_transparent"
-            android:imeOptions="actionNext"
-            android:singleLine="true"/>
+            android:text="ADDRESS LINE 1"
+            android:textColor="@color/lp_primary_tint_color" />
 
         <View
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:background="@color/lp_grey"/>
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/lp_primary_tint_color" />
 
         <EditText
-            android:id="@+id/lp_zip"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:hint="ZIP"
-            android:textColor="@color/lp_black_color"
+            android:id="@+id/lp_address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lp_transparent"
+            android:gravity="center_vertical"
+            android:hint="tap to add"
+            android:imeOptions="actionNext"
+            android:inputType="textPostalAddress"
+            android:paddingLeft="16dp"
+            android:paddingRight="0dp"
+            android:singleLine="true"
+            android:textColor="@color/lp_black_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lp_grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/lp_white_color"
             android:gravity="center_vertical"
             android:paddingLeft="16dp"
             android:paddingRight="0dp"
-            android:inputType="number"
-            android:maxLength="5"
-            android:maxLines="1"
-            android:digits="0123456789"
+            android:text="ADDRESS LINE 2 / APARTMENT #"
+            android:textColor="@color/lp_primary_tint_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/lp_primary_tint_color" />
+
+        <EditText
+            android:id="@+id/lp_address2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:background="@color/lp_transparent"
+            android:gravity="center_vertical"
+            android:hint="tap to add"
             android:imeOptions="actionNext"
-            android:singleLine="true"/>
+            android:inputType="textPostalAddress"
+            android:paddingLeft="16dp"
+            android:paddingRight="0dp"
+            android:singleLine="true"
+            android:textColor="@color/lp_black_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lp_grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/lp_white_color"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="0dp"
+                android:text="CITY"
+                android:textColor="@color/lp_primary_tint_color" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="0dp"
+                android:text="STATE"
+                android:textColor="@color/lp_primary_tint_color" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="0dp"
+                android:text="ZIP"
+                android:textColor="@color/lp_primary_tint_color" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/lp_primary_tint_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lp_white_color"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/lp_city"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/lp_transparent"
+                android:gravity="center_vertical"
+                android:hint="tap to add"
+                android:imeOptions="actionNext"
+                android:paddingLeft="16dp"
+                android:paddingRight="0dp"
+                android:singleLine="true"
+                android:textColor="@color/lp_black_color" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/lp_grey" />
+
+            <EditText
+                android:id="@+id/lp_state"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/lp_transparent"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:gravity="center_vertical"
+                android:hint="ST"
+                android:imeOptions="actionNext"
+                android:inputType="textCapCharacters"
+                android:maxLength="2"
+                android:paddingLeft="16dp"
+                android:paddingRight="0dp"
+                android:singleLine="true"
+                android:textColor="@color/lp_black_color" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/lp_grey" />
+
+            <EditText
+                android:id="@+id/lp_zip"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/lp_transparent"
+                android:digits="0123456789"
+                android:gravity="center_vertical"
+                android:hint="ZIP"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:paddingLeft="16dp"
+                android:paddingRight="0dp"
+                android:singleLine="true"
+                android:textColor="@color/lp_black_color" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lp_grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/lp_white_color"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="0dp"
+            android:text="EMAIL"
+            android:textColor="@color/lp_primary_tint_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/lp_primary_tint_color" />
+
+        <EditText
+            android:id="@+id/lp_email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lp_transparent"
+            android:gravity="center_vertical"
+            android:hint="tap to add"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:textColor="@color/lp_black_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lp_grey" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@color/lp_white_color"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="0dp"
+            android:text="ADDRESS QUICK-NAME (OPTIONAL)"
+            android:textColor="@color/lp_primary_tint_color" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/lp_primary_tint_color" />
+
+        <EditText
+            android:id="@+id/lp_quick_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/lp_transparent"
+            android:gravity="center_vertical"
+            android:hint="tap to add"
+            android:imeOptions="actionDone"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:singleLine="true"
+            android:textColor="@color/lp_black_color" />
 
     </LinearLayout>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/lp_grey" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:background="@color/lp_white_color"
-        android:text="EMAIL"
-        android:gravity="center_vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="0dp"
-        android:textColor="@color/lp_primary_tint_color" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/lp_primary_tint_color" />
-
-    <EditText
-        android:id="@+id/lp_email"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:hint="tap to add"
-        android:background="@color/lp_transparent"
-        android:textColor="@color/lp_black_color"
-        android:gravity="center_vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:inputType="textEmailAddress"
-        android:imeOptions="actionNext"
-        android:singleLine="true"/>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@color/lp_grey" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="32dp"
-        android:background="@color/lp_white_color"
-        android:text="ADDRESS QUICK-NAME (OPTIONAL)"
-        android:gravity="center_vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="0dp"
-        android:textColor="@color/lp_primary_tint_color" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/lp_primary_tint_color" />
-
-    <EditText
-        android:id="@+id/lp_quick_name"
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:hint="tap to add"
-        android:background="@color/lp_transparent"
-        android:textColor="@color/lp_black_color"
-        android:gravity="center_vertical"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:inputType="textEmailAddress"
-        android:imeOptions="actionDone"
-        android:singleLine="true"/>
-
-</LinearLayout>
+</ScrollView>
