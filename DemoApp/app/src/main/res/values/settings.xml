@@ -1,31 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- endpoint -->
-    <bool name="lp_debug">false</bool>
+    <bool name="lp_debug">true</bool>  <!--turns on logcat debugging-->
+    <bool name="lp_test_mode">false</bool>
 
-    <bool name="lp_find_stores">true</bool>
-    <bool name="lp_ship_to_home">true</bool>
-
-    <string name="lp_partner_id"></string>
-    <string name="lp_password"></string>
+    <bool name="lp_find_stores">false</bool> <!-- show store list to select from -->
+    <bool name="lp_ship_to_home">true</bool> <!-- show ship to home options -->
 
     <string name="lp_partner_source_id"></string>
     <string name="lp_merchant_id"></string>
 
+    <bool name="lp_is_app_merchant_group">false</bool>
+    <string name="lp_merchant_group_key"></string>
+    <string name="lp_store_search_radius">50</string>
+    <string name="lp_returned_store_number">50</string>
+
     <!-- allow testing for fake order (no final submission executed) for test modes -->
     <bool name="lp_offer_choice_for_test_orders">false</bool>
+
+    <!-- filter returned store list to only show stores matching merchant ID-->
+    <bool name="lp_use_merchant_id_for_stores">false</bool>
 
     <!-- set this to true and provide your merchant id if necessary -->
     <bool name="lp_is_app_private_label">false</bool>
 
-    <!-- set this to true and provide your merchant group key if necessary -->
-    <bool name="lp_is_app_merchant_group">false</bool>
-    <string name="lp_merchant_group_key"></string>
-
-    <string name="lp_returned_store_number">20</string>
-
-    <string name="lp_endpoint">http://staging.api.lifepics.com/V4.1/api/</string>
-    <string name="lp_endpoint_secure">https://staging.api.lifepics.com/V4.1/api/</string>
+    <string name="lp_endpoint">http://api.lifepics.com/V4.1/api/</string>
+    <string name="lp_endpoint_secure">https://api.lifepics.com/V4.1/api/</string>
     <string name="lp_amazonws_submit">http://ec2-54-69-180-153.us-west-2.compute.amazonaws.com/lifepics/submit_charge.php</string>
     <string name="lp_amazonws_capture">http://ec2-54-69-180-153.us-west-2.compute.amazonaws.com/lifepics/capture_charge.php</string>
 

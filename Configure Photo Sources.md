@@ -8,7 +8,7 @@ The LifePics framework presents a set of image sources that can retrieve users' 
 * Flickr
 * Google
 * SmugMug
-* LifePics (always presented)
+* LifePics 
 * Seeded Images (developer-defined)
 
 To properly configure an image source, you generally need to provide a Public Key or options that are going to be unique to each one. Configuration for each source is explained below.
@@ -97,6 +97,17 @@ Now, you'll need to configure it as an image source:
 
 1. Create a new app key on [SmugMug's Website](https://secure.smugmug.com/settings/?nick=raptureinvenice#section=api-keys).
 2. Add a string resource for the key *lp_smugmug_key* and set it to your provided *Key*.
+
+### LifePics
+
+1. Add the following string to your keys.xml file.
+
+   `<string name="lp_lifepics_key"><developer key></string> `
+
+2. Define the name and image for the photo source by putting the following lines in your settings.xml file or your strings.xml file.
+
+	`<string name="lp_source_name">My Lifepics Prints</string>
+    <string name="lp_image_name">app_icon</string>`
 
 ### Seeded Images
 

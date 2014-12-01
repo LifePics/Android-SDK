@@ -18,10 +18,14 @@ import com.taylorcorp.lifepics.listeners.OrderStatusListener;
 import com.taylorcorp.lifepics.lp.LifePicsResponse;
 import com.taylorcorp.lifepics.model.LifePicsPreferences;
 import com.taylorcorp.lifepics.model.purchases.Cart;
+import com.taylorcorp.lifepics.model.purchases.Product;
 import com.taylorcorp.lifepics.model.sources.DeviceImageSource;
 import com.taylorcorp.lifepics.utils.AlertUtils;
 import com.taylorcorp.lifepics.webservices.LifePicsWebServiceResponse;
 import com.taylorcorp.lifepics.webservices.data.AccountInfo;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Andrew on 10/22/2014.
@@ -51,9 +55,11 @@ public class MyFragment extends Fragment implements OrderStatusListener {
     private void configureView() {
         // listen in
         MainApplication.getShoppingCart().setOrderStatusListener(this);
-        String userID = MainApplication.getAppPreferences().getUserID();
+        MainApplication.getShoppingCart().setOrderStatusListener(this);
 
         checkIfWeNeedSomeLocalImages();
+
+        String userID = MainApplication.getAppPreferences().getUserID();
 
         if (userID == null || userID.isEmpty()) {
             MainApplication.getLifePicsWebService().createTemporaryUser(
@@ -93,6 +99,38 @@ public class MyFragment extends Fragment implements OrderStatusListener {
                             }
                         });
             }
+        }
+
+        if (MainApplication.getAppPreferences().getMerchantID() != null && !MainApplication.getAppPreferences().getMerchantID().isEmpty()) {
+            MainApplication.loadProducts(MainApplication.getAppPreferences().getMerchantID(), 1, new LifePicsResponse() {
+
+                @Override
+                public void didComplete(Object response, Exception ex) {
+                    if (MainApplication.isDebug()) {
+                        Log.d("LP", "Products Loaded");
+                    }
+                }
+            });
+        } else {
+            List<Product> products = new ArrayList<Product>();
+
+            products.add(Product.getGenericProduct(4.0, 6.0));
+            products.add(Product.getGenericProduct(4.0, 8.0));
+            products.add(Product.getGenericProduct(5.0, 7.0));
+            products.add(Product.getGenericProduct(8.0, 10.0));
+            products.add(Product.getGenericProduct(8.0, 12.0));
+            products.add(Product.getGenericProduct(11.0, 14.0));
+            products.add(Product.getGenericProduct(20.0, 16.0));
+            products.add(Product.getGenericProduct(30.0, 20.0));
+            products.add(Product.getGenericProduct(36.0, 24.0));
+            products.add(Product.getGenericProduct(4.0, 4.0));
+            products.add(Product.getGenericProduct(5.0, 5.0));
+            products.add(Product.getGenericProduct(8.0, 8.0));
+            products.add(Product.getGenericProduct(10.0, 10.0));
+
+
+            MainApplication.setProducts(products);
+
         }
 
         if (MainApplication.isDebug())

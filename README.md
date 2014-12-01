@@ -46,9 +46,6 @@ Installation
 2. Unzip and copy the resources from res.zip into your project. You're free to change any of the values in these with discretion.
 3. Create a settings.xml file within the values folder.  Inside of this file define the following items with appropriate values:
 
-		<string name="lp_partner_id">ID</string>
-    	<string name="lp_password">PWD</string>
-
     	<string name="lp_partner_source_id">ID</string>
     	
     	<string name="lp_merchant_group_key">KEY</string>
@@ -72,6 +69,10 @@ Installation
 		<string name="lp_stripe_publishable_key">key</string>
 
   	Information about Stripe accounts can be found on the  [Stripe Website](http://www.stripe.com).
+
+7.  If you have defined a merchant ID but want all stores returned in the store list, add the following:
+
+		<bool name="lp_use_merchant_id_for_stores">true</bool>
 
 5. Allow the following permissions in your AndroidManifest.xml:
 

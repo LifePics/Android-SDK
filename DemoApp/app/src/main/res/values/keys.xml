@@ -8,6 +8,8 @@
     <string name="lp_google_key"></string>
     <string name="lp_smugmug_key"></string>
 
+    <string name="lp_lifepics_key"></string>
+
     <string name="lp_stripe_publishable_key"></string>
 
 </resources>

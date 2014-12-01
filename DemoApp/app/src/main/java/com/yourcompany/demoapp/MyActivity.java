@@ -13,7 +13,6 @@ import com.taylorcorp.lifepics.listeners.OrderStatusListener;
 import com.taylorcorp.lifepics.lp.LifePicsResponse;
 import com.taylorcorp.lifepics.model.purchases.Cart;
 import com.taylorcorp.lifepics.products.ProductsActivity;
-import com.taylorcorp.lifepics.utils.AlertUtils;
 import com.taylorcorp.lifepics.webservices.LifePicsWebServiceResponse;
 import com.taylorcorp.lifepics.webservices.data.AccountInfo;
 
@@ -37,14 +36,6 @@ public class MyActivity extends ActionBarActivity implements OrderStatusListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my);
-
-        String partnerId = null;
-        String password = null;
-        String developerId = null;
-
-        if (partnerId == null || password == null) {
-            AlertUtils.showSimpleAlert(this, "LifePics Partner ID Required", "To fully explore this demo, you'll first need to get a LifePics Partner ID. Put it in the MyActivity.java file. Details are provided in the ReadMe.\n\nWe'll take you as far as we can without a partner ID, but you'll see errors when trying to find photofinisher locations.");
-        }
 
         // listen in
         MainApplication.getShoppingCart().setOrderStatusListener(this);
