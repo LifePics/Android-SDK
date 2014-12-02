@@ -7,7 +7,6 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="32dp"
-            android:layout_weight="1"
             android:gravity="center"
             android:paddingLeft="16dp"
             android:paddingRight="0dp"
@@ -24,7 +23,6 @@
             android:id="@+id/lp_edit_discount_code"
             android:layout_width="wrap_content"
             android:layout_height="40dp"
-            android:layout_weight="1"
             android:background="@color/lp_transparent"
             android:gravity="center_vertical"
             android:hint="tap to add"

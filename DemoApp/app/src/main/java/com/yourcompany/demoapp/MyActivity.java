@@ -90,6 +90,8 @@ public class MyActivity extends ActionBarActivity implements OrderStatusListener
 
         if (MainApplication.isDebug())
             Log.d("LP", "User id = " + MainApplication.getAppPreferences().getUserID());
+
+        configureView();
     }
 
     private void populateProducts() {

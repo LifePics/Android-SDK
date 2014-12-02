@@ -6,6 +6,8 @@
     <bool name="lp_find_stores">false</bool> <!-- show store list to select from -->
     <bool name="lp_ship_to_home">true</bool> <!-- show ship to home options -->
 
+    <bool name="lp_show_discount">false</bool>
+
     <string name="lp_partner_source_id"></string>
     <string name="lp_merchant_id"></string>
 

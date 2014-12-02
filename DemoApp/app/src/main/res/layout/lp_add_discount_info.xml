@@ -1,0 +1,23 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="39dp"
+    android:background="@color/lp_white_color">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lp_grey"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:text="Add Discount Info"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/lp_primary_tint_color"
+        android:background="@color/lp_transparent"
+        android:textSize="@dimen/lp_shipping_item_txt_size" />
+
+</LinearLayout>
