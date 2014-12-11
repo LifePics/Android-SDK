@@ -64,6 +64,12 @@ Installation
    If you turn on Pickup Locations you should specify the store search radius within the settings.xml file:
 
 		<string name="lp_store_search_radius">MILES</string>
+
+	If you want the user to be able to specify discount codes or preferred customer numbers you should declare it by adding the following line to settings.xml
+
+		<string name="lp_show_discount">true</string>
+
+
 6.  If you turn on Ship To Home you must obtain a Stripe Key in order to receive payments.  Define the Stripe key in the keys.xml file.
 
 		<string name="lp_stripe_publishable_key">key</string>

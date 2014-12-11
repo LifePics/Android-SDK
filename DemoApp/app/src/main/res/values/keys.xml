@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="lp_developer_key"></string>
+    <string name="lp_developer_key">4D36708AA517F94C0E71596E38B803B9</string>
     <string name="lp_instagram_key"></string>
     <string name="lp_facebook_app_id"></string>
     <string name="lp_flickr_key"></string>

@@ -3,8 +3,8 @@
     <bool name="lp_debug">true</bool>  <!--turns on logcat debugging-->
     <bool name="lp_test_mode">false</bool>
 
-    <bool name="lp_find_stores">false</bool> <!-- show store list to select from -->
-    <bool name="lp_ship_to_home">true</bool> <!-- show ship to home options -->
+    <bool name="lp_find_stores">true</bool> <!-- show store list to select from -->
+    <bool name="lp_ship_to_home">false</bool> <!-- show ship to home options -->
 
     <bool name="lp_show_discount">false</bool>
 
