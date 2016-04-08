@@ -1,0 +1,107 @@
+[
+    {
+        "CategoryName" : "Traditional Prints",
+        "ProductID": 1398080,
+        "Description" : "4\"x6\" Print",
+        "SKU" : "114",
+        "Width" : 4,
+        "Length" : 6,
+        "Attributes":
+        [
+            {
+                "GroupName": "Finish",
+                "Value": "Glossy",
+                "AttributeID": 1,
+                "IsDefault": true
+            },
+            {
+                "GroupName": "Finish",
+                "Value": "Matte",
+                "AttributeID": 2
+            }
+        ]
+    },
+    {
+        "CategoryName" : "Traditional Prints",
+        "ProductID": 1398082,
+        "Description" : "5\"x7\" Print",
+        "SKU" : "115",
+        "Width" : 5,
+        "Length" : 7,
+        "Attributes": [
+            {
+                "GroupName": "Finish",
+                "Value": "Glossy",
+                "AttributeID": 1,
+                "IsDefault": true
+            },
+            {
+                "GroupName": "Finish",
+                "Value": "Matte",
+                "AttributeID": 2
+            }
+        ]
+    },
+    {
+        "CategoryName" : "Traditional Prints",
+        "ProductID": 1398084,
+        "Description" : "8\"x10\" Print",
+        "SKU" : "118",
+        "Width" : 8,
+        "Length" : 10,
+        "Attributes": [
+            {
+                "GroupName": "Finish",
+                "Value": "Glossy",
+                "AttributeID": 1,
+                "IsDefault": true
+            },
+            {
+                "GroupName": "Finish",
+                "Value": "Matte",
+                "AttributeID": 2
+            }
+        ]
+    },
+    {
+        "CategoryName" : "Square Prints",
+        "ProductID": 4915641,
+        "Description" : "5\"x5\" Print",
+        "SKU" : "557",
+        "Width" : 5,
+        "Length" : 5,
+        "Attributes": [
+            {
+                "GroupName": "Finish",
+                "Value": "Glossy",
+                "AttributeID": 1,
+                "IsDefault": true
+            },
+            {
+                "GroupName": "Finish",
+                "Value": "Matte",
+                "AttributeID": 2
+            }
+        ]
+    },
+    {
+        "CategoryName" : "Square Prints",
+        "ProductID": 4931219,
+        "Description" : "8\"x8\" Print",
+        "SKU" : "199",
+        "Width" : 8,
+        "Length" : 8,
+        "Attributes": [
+            {
+                "GroupName": "Finish",
+                "Value": "Glossy",
+                "AttributeID": 1,
+                "IsDefault": true
+            },
+            {
+                "GroupName": "Finish",
+                "Value": "Matte",
+                "AttributeID": 2
+            }
+        ]
+    }]

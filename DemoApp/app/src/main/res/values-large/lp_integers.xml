@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <integer name="lp_cart_number_size">14</integer>
-    <integer name="lp_cart_number_xoffset">8</integer>
-    <integer name="lp_cart_number_yoffset">0</integer>
-
-</resources>
