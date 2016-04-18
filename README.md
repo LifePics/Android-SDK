@@ -40,12 +40,12 @@ Installation
 1. Copy the following from Android Files/ into your libs/ folder:
 
         amazonmaps-1.0.2.jar
-	card.io-5.0.0.aar
-	gson-2.2.4.jar
-	life-pics-sdk.aar
+        card.io-5.0.0.aar
+        gson-2.2.4.jar
+        life-pics-sdk.aar
 
    Copy the following folder from Android Files to you App folder:
-	creativesdk-repo
+        creativesdk-repo
 
 2. Unzip and copy the resources from res.zip into your project. You're free to change any of the values in these with discretion.
 3. Create a settings.xml file within the values folder.  Inside of this file define the following items with appropriate values:
