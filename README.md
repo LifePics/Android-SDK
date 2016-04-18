@@ -1,4 +1,4 @@
-LifePics Android SDK Version 1.0.4
+LifePics Android SDK Version 1.0.5
 ==================================
 
 
@@ -28,7 +28,7 @@ Prerequisites
 
 You will need a free LifePics developer key. Details are in the Overview section above.
 
-The SDK supports Android 2.3.3 and later.
+The SDK supports Android 4.0.3 and later.
 
 These instructions are for setting up the LifePics SDK in an app using Android Studio.  If you're still using the older ADT environment, 
 please adjust accordingly.
@@ -39,16 +39,18 @@ Installation
 
 1. Copy the following from Android Files/ into your libs/ folder:
 
-        LifePicsSDK.jar
-		stripe-java-1.15.1
-		gson-2.2.4
+        amazonmaps-1.0.2.jar
+	card.io-5.0.0.aar
+	gson-2.2.4.jar
+	life-pics-sdk.aar
+
+   Copy the following folder from Android Files to you App folder:
+	creativesdk-repo
 
 2. Unzip and copy the resources from res.zip into your project. You're free to change any of the values in these with discretion.
 3. Create a settings.xml file within the values folder.  Inside of this file define the following items with appropriate values:
 
     	<string name="lp_partner_source_id">ID</string>
-    	
-    	<string name="lp_merchant_group_key">KEY</string>
 
 4. Create a keys.xml file within the values folder.  Inside of this file define the LifePics developer key (provided by LifePics):
 		
@@ -82,13 +84,15 @@ Installation
 
 5. Allow the following permissions in your AndroidManifest.xml:
 
-        <uses-permission android:name="android.permission.INTERNET"/>
-        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-	    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-	    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    	<uses-permission android:name="android.permission.INTERNET"/>
+    	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    	<uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    	<uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    	<uses-permission android:name="android.permission.READ_CONTACTS" />
 
 4. Add Google Play Services and the V7 Support Library as a dependencies.  You can do this in Module Settings.  Select your app, then the "Dependencies" tab, then add these as library dependencies.
 
@@ -254,6 +258,13 @@ You can customize the colors used by the LifePics Order Activity by tweaking the
 	<color name="lp_secondary_tint_color">#fcb024</color>
 
 Further interface customizations can be made using the XML files.
+
+New in Version 1.0.5
+--------------------
+
+* Add Navigation Panel.
+* Fix some issues when place orders.
+* Add auto crop image function.
 
 New in Version 1.0.4
 --------------------
