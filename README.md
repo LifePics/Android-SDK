@@ -328,7 +328,7 @@ New in Version 1.0.2
 * Added Google Image Support
 * Added SmugMug Image Support
 
-New in Version 2.0.2
+New in Version 1.0.1
 --------------------
 
 * Added Ship To Home
