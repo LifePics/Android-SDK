@@ -262,7 +262,7 @@ Installation
 
 20. Finally, Copy Json file to ASSETS folder:
 		
-		There are two main parts you need to check in the .json file.
+		There are two main parts you have to set in the .json file.
 
 		* Category attributes
 			- CategoryName
