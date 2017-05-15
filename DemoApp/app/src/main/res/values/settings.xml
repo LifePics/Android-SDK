@@ -28,11 +28,15 @@
     <!-- set this to true and provide your merchant group key if necessary -->
     <bool name="lp_is_app_merchant_group">false</bool>
 
-    <string name="lp_endpoint">http://staging.api.lifepics.com/V4.2/api/</string>
-    <string name="lp_endpoint_secure">http://staging.api.lifepics.com/V4.2/api/</string>
-    <string name="lp_amazonws_submit">http://ec2-54-69-180-153.us-west-2.compute.amazonaws.com/lifepics/submit_charge.php</string>
-    <string name="lp_amazonws_capture">http://ec2-54-69-180-153.us-west-2.compute.amazonaws.com/lifepics/capture_charge.php</string>
+    <string name="lp_endpoint">http://staging.api.lifepics.com/V4.3/api/</string>
+    <string name="lp_endpoint_secure">http://staging.api.lifepics.com/V4.3/api/</string>
+    <string name="lp_amazonws_submit">http://ec2-52-27-165-202.us-west-2.compute.amazonaws.com/lifepics/submit_charge.php</string>
+    <string name="lp_amazonws_capture">http://ec2-52-27-165-202.us-west-2.compute.amazonaws.com/lifepics/capture_charge.php</string>
 
     <!-- targets -->
     <string name="lp_build_target">Development</string>
+
+    <string name="lp_white_label_app_name">LifePics Demo</string>
+
+    <bool name="lp_support_pick_up_in_store">true</bool>
 </resources>

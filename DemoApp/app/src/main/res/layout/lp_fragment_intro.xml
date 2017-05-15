@@ -38,13 +38,22 @@
             android:text="@string/lp_intro_description"/>
 
         <Button
-            android:id="@+id/lp_btn_order"
+            android:id="@+id/lp_btn_Traditional_Prints"
             android:layout_width="match_parent"
             android:layout_height="@dimen/lp_button_height"
             style="@style/lp_intro_order_button"
             android:layout_marginLeft="@dimen/lp_cart_button_horizontal_margin"
             android:layout_marginRight="@dimen/lp_cart_button_horizontal_margin"
-            android:text="@string/lp_intro_order_prints"/>
+            android:text="Traditional Prints"/>
+
+        <Button android:layout_marginTop="20dp"
+            android:id="@+id/lp_btn_Square_Prints"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lp_button_height"
+            style="@style/lp_intro_order_button"
+            android:layout_marginLeft="@dimen/lp_cart_button_horizontal_margin"
+            android:layout_marginRight="@dimen/lp_cart_button_horizontal_margin"
+            android:text="Square Prints"/>
     </LinearLayout>
 
     <TextView

@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
@@ -11,15 +12,6 @@
     <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
     <uses-permission android:name="android.permission.READ_CONTACTS" />
-
-    <!-- Permission to vibrate - recommended, allows vibration feedback on scan -->
-    <uses-permission android:name="android.permission.vibrate"/>
-    <!-- Permission to use camera - required -->
-    <uses-permission android:name="android.permission.camera"/>
-    <!-- Camera features - recommended -->
-    <uses-feature android:name="android.hardware.Camera" android:required="false"/>
-    <uses-feature android:name="android.hardware.Camera.autofocus" android:required="false"/>
-    <uses-feature android:name="android.hardware.Camera.flash" android:required="false"/>
 
     <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
 
@@ -34,6 +26,11 @@
         <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB6W7Jt98Lk4UzHWqr6kp7e-BKkoh8pAi0" />
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/lp_facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
         <activity
             android:name="com.yourcompany.demoapp.MyActivity"
@@ -54,9 +51,6 @@
         <activity android:name="com.taylorcorp.lifepics.order.OrderActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop">
-            <!--<meta-data-->
-                <!--android:name="android.support.PARENT_ACTIVITY"-->
-                <!--android:value="com.taylorcorp.lifepics.app.activities.IntroActivity" />-->
         </activity>
 
         <activity android:name="com.taylorcorp.lifepics.activities.FlickrViewerActivity"
@@ -73,27 +67,28 @@
         <activity android:name="com.taylorcorp.lifepics.cart.CartActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop">
-            <!--<meta-data-->
-                <!--android:name="android.support.PARENT_ACTIVITY"-->
-                <!--android:value="com.taylorcorp.lifepics.order.OrderActivity" />-->
         </activity>
 
         <activity
             android:name="com.taylorcorp.lifepics.locations.PickupLocationsActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop"/>
+
         <activity
             android:name="com.taylorcorp.lifepics.locations.PickupLocationsNoMapActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop" />
+
         <activity
             android:name="com.taylorcorp.lifepics.contactinfo.ContactInfoActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop"/>
+
         <activity
             android:name="com.taylorcorp.lifepics.order.OrderCompletedActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop"/>
+
         <activity
             android:name="com.taylorcorp.lifepics.shipping.ShippingAndPaymentActivity"
             android:screenOrientation="sensorPortrait"
@@ -102,10 +97,8 @@
             android:name="com.taylorcorp.lifepics.shipping.AddShippingInfoActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop" >
-            <!--<meta-data-->
-                <!--android:name="android.support.PARENT_ACTIVITY"-->
-                <!--android:value="com.taylorcorp.lifepics.shipping.ShippingAndPaymentActivity" />-->
         </activity>
+
         <activity
             android:name="com.taylorcorp.lifepics.shipping.EditShippingInfoActivity"
             android:screenOrientation="sensorPortrait"
@@ -120,20 +113,12 @@
             android:name="com.taylorcorp.lifepics.shipping.AddPaymentActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop" >
-
-            <!--<meta-data-->
-                <!--android:name="android.support.PARENT_ACTIVITY"-->
-                <!--android:value="com.taylorcorp.lifepics.shipping.ShippingAndPaymentActivity" />-->
         </activity>
 
         <activity
             android:name="com.taylorcorp.lifepics.shipping.AddDiscountCodeActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop">
-
-            <!--<meta-data-->
-            <!--android:name="android.support.PARENT_ACTIVITY"-->
-            <!--android:value="com.taylorcorp.lifepics.shipping.ShippingAndPaymentActivity" />-->
         </activity>
 
         <activity
@@ -141,27 +126,24 @@
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop" />
 
-        <activity android:name="com.facebook.FacebookActivity"
-            android:configChanges=
-                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
-        <activity android:name="com.soundcloud.android.crop.CropImageActivity" android:theme="@style/CustomTheme" />
-
-        <!-- Activities responsible for gathering payment info -->
-        <activity android:name="io.card.payment.CardIOActivity" android:configChanges="keyboardHidden|orientation"
-            android:hardwareAccelerated="true"/>
-        <activity android:name="io.card.payment.DataEntryActivity" android:screenOrientation="portrait"/>
-
         <activity android:name="com.taylorcorp.lifepics.account.SignInAccountActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop" />
-        <activity android:name="com.taylorcorp.lifepics.activities.FeedbackAndSupportActivity" android:screenOrientation="sensorPortrait" />
 
-        <provider
-            android:name="com.aviary.android.feather.sdk.internal.cds.AviaryCdsProvider"
-            android:authorities="${applicationId}.AviaryCdsProvider"
-            android:exported="false" />
+        <activity android:name="com.taylorcorp.lifepics.activities.FeedbackAndSupportActivity"
+            android:screenOrientation="sensorPortrait" />
+
+        <activity android:name="com.taylorcorp.lifepics.activities.OrderHistoryActivity"
+            android:screenOrientation="sensorPortrait"
+            android:launchMode="singleTop">
+        </activity>
+
+        <receiver android:name="com.taylorcorp.lifepics.utils.NetWorkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
