@@ -43,7 +43,10 @@ Now, you'll need to configure it as an image source:
 
 5. Add the following activity entry to your Android Manifest as well:
 
-        <activity android:name="com.facebook.LoginActivity"/>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
 
 ### Flickr
