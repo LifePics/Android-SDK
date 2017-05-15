@@ -7,7 +7,6 @@ The LifePics framework presents a set of image sources that can retrieve users' 
 * Facebook
 * Flickr
 * Google
-* SmugMug
 * LifePics 
 * Seeded Images (developer-defined)
 
