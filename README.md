@@ -154,11 +154,6 @@ Installation
             </intent-filter>
         </receiver>
 
-        <activity android:name="com.facebook.FacebookActivity"
-            android:configChanges=
-                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-
 13. If you turn on Pickup Locations then you have to add the following activity to your AndroidManifest.xml file:
 
 		<activity
