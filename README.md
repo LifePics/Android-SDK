@@ -1,4 +1,4 @@
-LifePics Android SDK Version 1.0.5
+LifePics Android SDK Version 2.0.1
 ==================================
 
 
@@ -88,7 +88,20 @@ Installation
     	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
     	<uses-permission android:name="android.permission.READ_CONTACTS" />
 
-8. Add Google Play Services and the V7 Support Library as a dependencies.  You can do this in Module Settings.  Select your app, then the "Dependencies" tab, then add these as library dependencies.
+8. Add Google Play Services and the V7 Support Library as a dependencies.  You can do this in Module Settings.  Select your app, then the "Dependencies" tab, then add these as library dependencies. Also you need add some other reference to the dependeny, below are required library you have to add.
+
+    	dependencies {
+			compile 'com.facebook.android:facebook-android-sdk:4.7.0' 
+			compile 'com.android.support:appcompat-v7:24.0.0' 
+			compile 'com.android.support:design:24.0.0'
+			compile 'com.google.android.gms:play-services:9.0.0'
+			compile 'com.squareup.picasso:picasso:2.5.2'
+			compile 'io.card:android-sdk:5.4.1'
+			compile 'net.simonvt.menudrawer:menudrawer:3.0.6'
+			compile 'com.stripe:stripe-android:1.0.4'
+			compile 'ly.img.android:photo-editor-sdk:2.0.14'
+    	}
+	
 
 9. In the &lt;application&gt; section, you'll need to add these &lt;meta-data&gt; tags: ([supply your own Google Maps v2 key](https://developers.google.com/maps/documentation/android/start#obtain_a_google_maps_api_key))
 	
@@ -153,11 +166,6 @@ Installation
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
         </receiver>
-
-        <activity android:name="com.facebook.FacebookActivity"
-            android:configChanges=
-                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
 13. If you turn on Pickup Locations then you have to add the following activity to your AndroidManifest.xml file:
 
@@ -262,7 +270,7 @@ Installation
 
 20. Finally, Copy Json file to ASSETS folder:
 		
-		There are two main parts you need to check in the .json file.
+		There are two main parts you have to set in the .json file.
 
 		* Category attributes
 			- CategoryName
@@ -328,7 +336,7 @@ New in Version 1.0.2
 * Added Google Image Support
 * Added SmugMug Image Support
 
-New in Version 2.0.2
+New in Version 1.0.1
 --------------------
 
 * Added Ship To Home
