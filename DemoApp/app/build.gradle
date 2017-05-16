@@ -1,9 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'lifepics-open-source'
+            keyPassword 'lifepics'
+            storeFile file('lifepics-open-source.jks')
+            storePassword 'lifepics'
+        }
+    }
     compileSdkVersion 24
     buildToolsVersion '24.0.1'
-
     defaultConfig {
         applicationId 'com.yourcompany.demoapp'
         minSdkVersion 21
@@ -15,31 +22,33 @@ android {
 
         renderscriptSupportModeEnabled true
     }
-
     useLibrary 'org.apache.http.legacy'
-
     lintOptions {
         abortOnError false
     }
-
     dexOptions {
         incremental true
         javaMaxHeapSize "4g"
     }
 
+
     buildTypes {
-        release {
-            //runProguard false
+        debug {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
+        }
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.config
         }
     }
+
     productFlavors {
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
     }
-
     packagingOptions {
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE.txt'
@@ -55,8 +64,8 @@ repositories {
 }
 
 dependencies {
-    compile(name:'LifePicsSDK', ext:'aar')
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile(name: 'LifePicsSDK', ext: 'aar')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile 'com.facebook.android:facebook-android-sdk:4.7.0'
     compile 'com.android.support:appcompat-v7:24.0.0'
     compile 'com.android.support:design:24.0.0'
@@ -68,4 +77,4 @@ dependencies {
     compile 'ly.img.android:photo-editor-sdk:2.0.14'
 }
 
-//apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.gms.google-services'
