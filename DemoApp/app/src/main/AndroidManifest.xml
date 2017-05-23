@@ -1,39 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yourcompany.demoapp" >
+    package="com.yourcompany.demoapp">
 
-    <!-- LIFEPICS -->
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
-    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
-    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
 
     <application
         android:name="com.taylorcorp.lifepics.MainApplication"
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
-        android:label="LifePics Demo"
-        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        android:icon="@drawable/lp_ic_launcher"
+        android:label="LifePics SDK Demo"
+        android:theme="@style/lp_app_theme"
         android:largeHeap="true">
 
-        <!-- LIFEPICS -->
-        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="YOUR_KEY" />
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDT6NZUYM3Qz5R1WwxN9UEd3TB4K5lk804" />
         <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
         <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/lp_facebook_app_id"/>
 
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
         <activity
-            android:name="com.yourcompany.demoapp.MyActivity" android:screenOrientation="portrait">
+            android:name="com.yourcompany.demoapp.MyActivity"
+            android:label="@string/lp_title_intro"
+            android:screenOrientation="portrait"
+            android:theme="@style/lp_app_theme"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 
-        <!-- LIFEPICS -->
         <activity
             android:name="com.taylorcorp.lifepics.products.ProductsActivity"
             android:screenOrientation="sensorPortrait" />
@@ -41,23 +51,34 @@
         <activity android:name="com.taylorcorp.lifepics.order.OrderActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop">
+        </activity>
+
+        <activity android:name="com.taylorcorp.lifepics.activities.FlickrViewerActivity"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="flickr43dbd0bf00331150a735292a76b41c18" />
+            </intent-filter>
 
         </activity>
 
         <activity android:name="com.taylorcorp.lifepics.cart.CartActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop">
-
         </activity>
 
         <activity
             android:name="com.taylorcorp.lifepics.locations.PickupLocationsActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop"/>
-	<activity
+
+        <activity
             android:name="com.taylorcorp.lifepics.locations.PickupLocationsNoMapActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop" />
+
         <activity
             android:name="com.taylorcorp.lifepics.contactinfo.ContactInfoActivity"
             android:screenOrientation="sensorPortrait"
@@ -75,9 +96,9 @@
         <activity
             android:name="com.taylorcorp.lifepics.shipping.AddShippingInfoActivity"
             android:screenOrientation="sensorPortrait"
-            android:launchMode="singleTop">
-
+            android:launchMode="singleTop" >
         </activity>
+
         <activity
             android:name="com.taylorcorp.lifepics.shipping.EditShippingInfoActivity"
             android:screenOrientation="sensorPortrait"
@@ -87,8 +108,15 @@
             android:name="com.taylorcorp.lifepics.shipping.ShippingAddressesActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop" />
+
         <activity
             android:name="com.taylorcorp.lifepics.shipping.AddPaymentActivity"
+            android:screenOrientation="sensorPortrait"
+            android:launchMode="singleTop" >
+        </activity>
+
+        <activity
+            android:name="com.taylorcorp.lifepics.shipping.AddDiscountCodeActivity"
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop">
         </activity>
@@ -98,9 +126,24 @@
             android:screenOrientation="sensorPortrait"
             android:launchMode="singleTop" />
 
-        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+        <activity android:name="com.taylorcorp.lifepics.account.SignInAccountActivity"
+            android:screenOrientation="sensorPortrait"
+            android:launchMode="singleTop" />
 
-        <activity android:name="com.facebook.LoginActivity"/>
+        <activity android:name="com.taylorcorp.lifepics.activities.FeedbackAndSupportActivity"
+            android:screenOrientation="sensorPortrait" />
+
+        <activity android:name="com.taylorcorp.lifepics.activities.OrderHistoryActivity"
+            android:screenOrientation="sensorPortrait"
+            android:launchMode="singleTop">
+        </activity>
+
+        <receiver android:name="com.taylorcorp.lifepics.utils.NetWorkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>

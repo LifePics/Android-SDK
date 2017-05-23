@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="lp_title_intro">LifePics Demo</string>
+
+    <string name="lp_intro_header">LifePics Android SDK</string>
+    <string name="lp_intro_version">%1$s (%2$d) %3$s</string>
+    <string name="lp_intro_version_unknown">Version Unknown</string>
+    <string name="lp_intro_description">This is the LifePics Android SDK demo app. Just touch the button below. After that, everything you see is handled by the LifePics SDK.</string>
     <string name="lp_intro_order_prints">Order Prints</string>
+    <string name="lp_primary_color">Primary Color</string>
+    <string name="lp_secondary_color">Secondary Color</string>
     <string name="lp_intro_add_images_title">Test Photos</string>
     <string name="lp_intro_add_images_message">There are no photos in the simulator. Shall we fetch some in the background?\n\n (Watch the console for progress.)</string>
-
 
 </resources>

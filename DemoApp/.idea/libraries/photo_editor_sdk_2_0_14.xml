@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="photo-editor-sdk-2.0.14">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/ly.img.android/photo-editor-sdk/2.0.14/jars/classes.jar!/" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/ly.img.android/photo-editor-sdk/2.0.14/jars/libs/processor.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/ly.img.android/photo-editor-sdk/2.0.14/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

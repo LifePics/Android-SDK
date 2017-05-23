@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_number": "559965550772",
+    "project_id": "lifepics-branded-app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:559965550772:android:4218a34a979ca2a4",
+        "android_client_info": {
+          "package_name": "com.yourcompany.demoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "559965550772-5s6desqo0eofb1evp14tato9fl926f7k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yourcompany.demoapp",
+            "certificate_hash": "a456b236b0bd6527bc38903f1ccc876b82ecd287"
+          }
+        },
+        {
+          "client_id": "559965550772-3unh77jqksbmtt3v0v4p6v8at7jskv04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANqNe02wlRmVvUJVnnNXfZANdbbm1uoBM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-98385050-7"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

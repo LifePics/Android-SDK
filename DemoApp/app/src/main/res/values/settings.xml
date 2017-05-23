@@ -1,33 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <bool name="lp_debug">true</bool>  <!--turns on logcat debugging-->
-    <bool name="lp_test_mode">false</bool>
+    <!-- endpoint -->
+    <bool name="lp_debug">true</bool>
 
-    <bool name="lp_find_stores">true</bool> <!-- show store list to select from -->
-    <bool name="lp_ship_to_home">false</bool> <!-- show ship to home options -->
+    <bool name="lp_find_stores">true</bool>
+    <bool name="lp_ship_to_home">true</bool>
 
-    <bool name="lp_show_discount">false</bool>
+    <string name="lp_partner_id">10750</string>
+    <string name="lp_password">l1fep1cs</string>
 
-    <string name="lp_partner_source_id"></string>
-    <string name="lp_merchant_id"></string>
+    <string name="lp_partner_source_id">10823</string>
+    <string name="lp_merchant_id">458</string>
 
-    <bool name="lp_is_app_merchant_group">false</bool>
     <string name="lp_merchant_group_key"></string>
-    <string name="lp_store_search_radius">50</string>
-    <string name="lp_returned_store_number">50</string>
+    <string name="lp_store_search_radius">10</string>
+    <string name="lp_returned_store_number">20</string>
 
     <!-- allow testing for fake order (no final submission executed) for test modes -->
     <bool name="lp_offer_choice_for_test_orders">false</bool>
-
-    <!-- filter returned store list to only show stores matching merchant ID-->
-    <bool name="lp_use_merchant_id_for_stores">false</bool>
+    <bool name="lp_test_mode">true</bool>
 
     <!-- set this to true and provide your merchant id if necessary -->
     <bool name="lp_is_app_private_label">false</bool>
 
-    <string name="lp_endpoint">http://api.lifepics.com/V4.1/api/</string>
-    <string name="lp_endpoint_secure">https://api.lifepics.com/V4.1/api/</string>
-    <string name="lp_amazonws_submit">http://ec2-54-69-180-153.us-west-2.compute.amazonaws.com/lifepics/submit_charge.php</string>
-    <string name="lp_amazonws_capture">http://ec2-54-69-180-153.us-west-2.compute.amazonaws.com/lifepics/capture_charge.php</string>
+    <bool name="lp_use_merchant_id_for_stores">false</bool>
 
+    <!-- set this to true and provide your merchant group key if necessary -->
+    <bool name="lp_is_app_merchant_group">false</bool>
+
+    <string name="lp_endpoint">http://staging.api.lifepics.com/V4.3/api/</string>
+    <string name="lp_endpoint_secure">http://staging.api.lifepics.com/V4.3/api/</string>
+    <string name="lp_amazonws_submit">http://ec2-52-27-165-202.us-west-2.compute.amazonaws.com/lifepics/submit_charge.php</string>
+    <string name="lp_amazonws_capture">http://ec2-52-27-165-202.us-west-2.compute.amazonaws.com/lifepics/capture_charge.php</string>
+
+    <!-- targets -->
+    <string name="lp_build_target">Development</string>
+
+    <string name="lp_white_label_app_name">LifePics Demo</string>
+
+    <bool name="lp_support_pick_up_in_store">true</bool>
 </resources>

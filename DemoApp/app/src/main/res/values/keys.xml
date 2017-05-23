@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="lp_developer_key">4D36708AA517F94C0E71596E38B803B9</string>
-    <string name="lp_instagram_key"></string>
-    <string name="lp_facebook_app_id"></string>
-    <string name="lp_flickr_key"></string>
-    <string name="lp_flickr_secret"></string>
-    <string name="lp_google_key"></string>
-    <string name="lp_smugmug_key"></string>
+    <string name="lp_instagram_key">05ca909db3224b2aabbec944d130a18a</string>
+    <string name="lp_facebook_app_id">490904617610161</string>
+    <string name="lp_flickr_key">43dbd0bf00331150a735292a76b41c18</string>
+    <string name="lp_flickr_secret">effa803bc63e0f1c</string>
+    <string name="lp_google_key">559965550772-5s6desqo0eofb1evp14tato9fl926f7k.apps.googleusercontent.com</string>
+    <string name="lp_lifepics_key">08771920FB856D111AED471EE227ACCB</string>
 
-    <string name="lp_lifepics_key"></string>
+    <string name="lp_stripe_publishable_key">pk_test_21cBhFbWDKDJu0h4zLvM2FQJ</string>
+    <string name="lp_stripe_live_publishable_key"></string>
+    <string name="lp_stripe_test_publishable_key"></string>
 
-    <string name="lp_stripe_publishable_key"></string>
-
+    <!--<string name="lp_client_secrect">309187b1-b433-44af-b5de-a3092060a4c5</string>-->
+    <!--<string name="lp_client_id">6354348d865d412e94d7f1a0e0958411</string>-->
 </resources>

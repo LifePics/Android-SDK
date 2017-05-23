@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    style="@style/lp_single_inset_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lp_component_vertical_margin"
+            android:src="@drawable/lp_ic_lifepics_logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lp_component_vertical_margin"
+            style="@style/lp_header_text"
+            android:text="@string/lp_intro_header"/>
+
+        <TextView
+            android:id="@+id/lp_txt_version"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lp_component_vertical_margin"
+            style="@style/lp_intro_version"
+            android:text="@string/lp_intro_version"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lp_component_vertical_margin"
+            style="@style/lp_normal_text"
+            android:text="@string/lp_intro_description"/>
+
+        <Button
+            android:id="@+id/lp_btn_Traditional_Prints"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lp_button_height"
+            style="@style/lp_intro_order_button"
+            android:layout_marginLeft="@dimen/lp_cart_button_horizontal_margin"
+            android:layout_marginRight="@dimen/lp_cart_button_horizontal_margin"
+            android:text="Traditional Prints"/>
+
+        <Button android:layout_marginTop="20dp"
+            android:id="@+id/lp_btn_Square_Prints"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/lp_button_height"
+            style="@style/lp_intro_order_button"
+            android:layout_marginLeft="@dimen/lp_cart_button_horizontal_margin"
+            android:layout_marginRight="@dimen/lp_cart_button_horizontal_margin"
+            android:text="Square Prints"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        style="@style/lp_intro_primary_color_text"
+        android:text="@string/lp_primary_color"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        style="@style/lp_intro_secondary_color_text"
+        android:text="@string/lp_secondary_color"/>
+</RelativeLayout>
